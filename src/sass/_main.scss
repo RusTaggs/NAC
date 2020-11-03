@@ -1,0 +1,276 @@
+$txtBlack: #001828;
+$txtWhite: #fff;
+body{
+	font-family: $cirReg;
+}
+.button{
+	padding: 1.78rem 4.8rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+	background: #83CEFD;
+	border-radius: 6rem;
+	color: $txtWhite;
+}
+
+.text{
+	font-size: 1.6rem;
+	color: $txtBlack;
+	font-weight: 400;
+}
+.link{
+	font-size: 1.6rem;
+	color: $txtBlack;
+	font-weight: 400;
+}
+.title{
+	font-size: 2.4rem;
+	font-weight: 400;
+	color: $txtBlack;
+}
+.titleBig{
+	font-size: 4.5rem;
+	color: $txtBlack;
+}
+
+.container{
+	max-width: 150rem;
+	width: 100%;
+}
+
+header{
+	background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
+	background-size: cover;
+
+
+	.header-menu{
+		
+		height: 15.3rem;
+		display: flex;
+		flex-direction: column;
+		.menu-top{
+			height: 9.45rem;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			.top-info{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				.text{
+					font-size: 2rem;
+					color: $txtWhite;
+					font-weight: 700;
+					margin-right: 1.5rem;
+				}
+
+				.contacts{
+					margin-left: 7rem;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+				}
+			}
+		}
+		.menu-bottom{
+			background: #fff;
+			width: 100%;
+			height: 5.877rem;
+			display: flex;
+			align-items: center;
+			.container{
+				
+				
+				ul{
+					
+					display: flex;
+					justify-content: space-between;
+					
+					
+				}
+
+				.text{
+					font-size: 1.8rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.header-main{
+		.container{
+			.main-text{
+				padding: 10.3rem 0 20.1rem;
+				width: 61rem;
+				p{
+					color: $txtWhite;
+				}
+				.text{
+					font-size: 2.4rem;
+					margin-top: 2.6rem;
+					margin-bottom: 7.4rem;
+					line-height: 3.5rem;
+				}
+				.titleBig{
+					line-height: 5.4rem;
+				}
+			}
+		}
+	}
+}
+main{
+
+	.offers{
+		padding: 8.5rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.offers-item{
+		background: url('../img/background.png') no-repeat;
+		background-size: cover;
+		width: 33rem;
+		height: 22.7rem;
+		padding: 3rem 3.5rem 1.7rem;
+
+		display: flex;
+		flex-direction: column;
+		.item-text{
+			width: 16rem;
+
+			.title{
+				line-height: 3.2rem;
+			}
+			.text{
+				margin-top: 1rem;
+				margin-bottom: 4.2rem;
+			}
+		}
+
+		p, a{
+			color: $txtWhite;
+		}
+		a::after{
+			content: ">>";
+			margin-left: 0.5rem;
+		}
+	}
+}
+footer{
+	background: linear-gradient(108.32deg, #001726 40.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
+	background-size: cover;
+	.container{
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+
+		.titleBig{
+			line-height: 6.6rem;
+			color: $txtWhite;
+		}
+		.footer-form{
+			margin-top: 1.3rem;
+			.form-main{
+				
+				display: flex;
+				margin-top: 5rem;
+				input, textarea{
+					padding: 1.8rem 1.8rem;
+					border: 1px solid #999;
+					border-radius: 4px;
+					background: none;
+					font-size: 1.4rem;
+					color: #d1d1d1;
+				}
+				.main-left{
+					margin-right: 8.8rem;
+
+					p{
+						margin-top: 3.3rem;
+					}
+					p:first-child{
+						margin-top: 0;
+					}
+
+					input{
+						margin-top: 1rem;
+						width: 33.5rem;
+					}
+
+					input:last-child{
+						margin-bottom: 3.2rem;
+					}
+				}
+				.main-right{
+					textarea{
+						margin-top: 1rem;
+						width: 50rem;
+						height: 29.2rem;
+						
+					}
+				}
+				p::after{
+					content: "*";
+					color: #FC8787;
+					margin-left: 0.5rem;
+				}
+			}
+			.form-confirm{
+				display: flex;
+				margin-bottom: 3.6rem;
+				input{
+					width: 2.3rem;
+					height: 2.3rem;
+					background: #83CEFD;
+					margin-right: 2rem;
+				}
+				span{
+					margin-top: .5rem;
+					width: 38rem;
+					font-size: 1.4rem;
+					line-height: 1.95rem;
+				}
+			}
+		}
+		.button{
+			padding: 2.2rem 7rem;
+			border: 0;
+		}
+		.text{
+			font-size: 1.8rem;
+			color: $txtWhite;
+		}
+
+		
+	}
+	.footer-main{
+		background: rgba(0, 0, 0, 0.5);
+		.container{
+			padding: 4.2rem 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.text{
+				color: $txtWhite;
+				font-size: 1.8rem;
+			}
+			.text:first-child{
+				color: #b0b0b0;
+			}
+			.contact-icons{
+				
+				a{
+					margin: 0 3.1rem;
+				}
+				a:first-child{
+					margin: 0;
+				}
+				a:last-child{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+}
+
+
