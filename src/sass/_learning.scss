@@ -1,0 +1,30 @@
+main{
+    .container{
+        
+        
+
+        .learning{
+            margin-top: 6.7rem;
+            margin-bottom: 9.5rem;
+            width: 65rem;
+            display: flex;
+            flex-direction: column;
+            .titleBig{
+                font-size: 5.2rem;
+                margin-bottom: 3rem;
+                font-weight: 700;
+            }
+            .title{
+                font-size: 3.6rem;
+                margin-bottom: 6.5rem;
+            }
+            a{
+                font-size: 4.5em;
+                font-weight: 700;
+                margin-bottom: 3.5rem;
+                color: #000;
+            }
+        }
+        
+    }
+}

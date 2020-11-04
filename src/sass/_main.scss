@@ -22,6 +22,10 @@ body{
 	color: $txtBlack;
 	font-weight: 400;
 }
+.link::after{
+	content: ">>";
+	margin-left: 1.2rem;
+}
 .title{
 	font-size: 2.4rem;
 	font-weight: 400;
@@ -150,10 +154,7 @@ main{
 		p, a{
 			color: $txtWhite;
 		}
-		a::after{
-			content: ">>";
-			margin-left: 0.5rem;
-		}
+		
 	}
 }
 footer{

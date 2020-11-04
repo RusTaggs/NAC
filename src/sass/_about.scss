@@ -1,0 +1,43 @@
+.about{
+    margin: 9.5rem 0.6rem 11rem;
+    .titleBig{
+        font-size: 5.2rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+    }
+    .title{
+        font-size: 3.6rem;
+        margin-bottom: 7rem;
+        width: 76rem;
+    }
+    .about-items{
+        display: flex;
+        justify-content: space-between;
+        
+        .item{
+            width: 28.4rem;
+            
+            img{
+                margin-bottom: 3rem;
+            }
+            .about-text{
+                
+                .title{
+                    font-size: 2.4rem;
+                    width: 25rem;
+                    line-height: 3.68rem;
+                    margin-bottom: 2.5rem;
+                }
+                .text{
+                    font-size: 1.6rem;
+                    line-height: 2.35rem;
+                    margin-bottom: 2rem;
+                }
+                .text:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}

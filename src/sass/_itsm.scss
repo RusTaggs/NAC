@@ -1,4 +1,53 @@
 .itsm{
     padding-top: 8rem;
     padding-bottom: 13.8rem;
+
+    .titleBig{
+        margin-bottom:5.2rem;
+        font-size: 5.2rem;
+        margin-top: 0.5rem;
+    }
+    .itsm-groups{
+        display: flex;
+        flex-direction: column;
+
+        .group1,
+        .group2{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .group1{
+            margin-bottom: 4rem;
+        }
+    }
+
+    .itsm-item1,
+    .itsm-item2{
+        width: 72.4rem;
+        height: 37.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text{
+            font-size: 3rem;
+            line-height: 4.4rem;
+            margin: 0 18rem 0 5rem;
+            
+        }
+    }
+    .itsm-item1{
+        background: url(../img/consulting-white.png) no-repeat;
+        background-size: cover;
+        .text{
+            color: $txtBlack;
+        }
+    }
+    .itsm-item2{
+        background: url(../img/consulting-blue.png) no-repeat;
+        background-size: cover;
+        .text{
+            color: $txtWhite;
+        }
+    }
 }
