@@ -662,3 +662,36 @@ header .main-404 {
 
 header .header-404 {
   padding-top: 5rem; }
+
+.comand {
+  padding: 8rem 0 12.3rem; }
+  .comand .titleBig {
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 7rem; }
+  .comand .comand-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .comand .comand-item {
+    display: flex;
+    margin-right: 5rem;
+    margin-bottom: 6rem; }
+    .comand .comand-item img {
+      margin-right: 3rem;
+      width: 16.5rem;
+      height: 16.5rem; }
+    .comand .comand-item .item-text {
+      width: 26.4rem; }
+      .comand .comand-item .item-text .title {
+        font-size: 2.4rem;
+        font-weight: 700; }
+      .comand .comand-item .item-text .text {
+        font-size: 1.6rem;
+        line-height: 2.35rem;
+        margin: 2rem 0; }
+      .comand .comand-item .item-text .text:last-child {
+        margin: 0; }
+  .comand .comand-item:nth-child(3n+3) {
+    margin-right: 0; }
+  .comand .comand-item:last-child {
+    margin-right: 0; }
