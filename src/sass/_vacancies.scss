@@ -1,0 +1,39 @@
+.vacancies{
+    padding-top: 7rem;
+    padding-bottom: 1.5rem;
+
+    .titleBig{
+        font-size: 5.2rem;
+        font-weight: 700;
+        margin-bottom: 8rem;
+    }
+    .title{
+        font-size: 3.6rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+    }
+
+    .text{
+        font-size: 2.4rem;
+    }
+    .text:nth-child(3){
+        margin: 3rem 0 2rem;
+    }
+
+    .link{
+        font-size: 2.4rem;
+        color: #083657;
+    }
+
+    .vacancies-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .vacancies-item{
+        width: 63.3rem;
+        margin-bottom: 7.5rem;
+        margin-right: 9rem;
+    }
+}
