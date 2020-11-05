@@ -695,3 +695,53 @@ header .header-404 {
     margin-right: 0; }
   .comand .comand-item:last-child {
     margin-right: 0; }
+
+.projects {
+  padding-top: 12rem;
+  padding-bottom: 9.5rem; }
+  .projects .titleBig {
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 7rem; }
+  .projects .projects-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .projects .projects-item {
+    background: #f3f3f3;
+    width: 71.5rem;
+    padding: 4.5rem 0 6.5rem 6.2rem;
+    margin-right: 6rem;
+    margin-bottom: 7rem;
+    border-radius: 1rem; }
+    .projects .projects-item img {
+      margin-bottom: 7.5rem;
+      margin-left: 6rem; }
+    .projects .projects-item .item-text {
+      width: 51.4rem; }
+      .projects .projects-item .item-text .text {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        line-height: 3rem; }
+      .projects .projects-item .item-text .text:first-child {
+        margin-bottom: 3.5rem;
+        font-size: 2.4rem; }
+      .projects .projects-item .item-text .text:last-child {
+        margin-bottom: 0; }
+      .projects .projects-item .item-text .title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2rem; }
+  .projects .projects-item:nth-child(2n+2) {
+    margin-right: 0; }
+  .projects .projects-item:nth-child(2) img {
+    margin-bottom: 9.5rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem; }
+  .projects .projects-item:nth-child(3) img {
+    margin-bottom: 10rem;
+    margin-left: 6rem;
+    margin-top: 5rem; }
+  .projects .projects-item:nth-child(4) img {
+    margin-bottom: 11rem;
+    margin-left: 5.7rem;
+    margin-top: 6rem; }
