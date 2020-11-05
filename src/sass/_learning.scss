@@ -1,14 +1,16 @@
 main{
+    background: #f8f8f8;
     .container{
         
         
 
-        .learning{
-            margin-top: 6.7rem;
-            margin-bottom: 9.5rem;
+        .learning-container{
+            padding-top: 6.7rem;
+            padding-bottom: 9.5rem;
             width: 65rem;
             display: flex;
             flex-direction: column;
+            
             .titleBig{
                 font-size: 5.2rem;
                 margin-bottom: 3rem;
