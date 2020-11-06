@@ -745,3 +745,122 @@ header .header-404 {
     margin-bottom: 11rem;
     margin-left: 5.7rem;
     margin-top: 6rem; }
+
+.offer {
+  padding-top: 12rem; }
+  .offer .container img {
+    margin-bottom: 5.65rem;
+    width: 18.3rem; }
+  .offer .container .titleBig {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 6rem;
+    width: 85rem;
+    line-height: 6rem; }
+  .offer .container .titleBig:last-child {
+    margin-bottom: 1rem; }
+  .offer .container .offers-header .contact-us {
+    margin-bottom: 12rem;
+    display: flex;
+    align-items: center; }
+    .offer .container .offers-header .contact-us .button {
+      padding: 2.5rem 6.5rem;
+      background: #083657;
+      font-size: 1.4rem;
+      margin-right: 4rem; }
+    .offer .container .offers-header .contact-us form {
+      position: relative; }
+      .offer .container .offers-header .contact-us form input[type=text] {
+        border: 1px solid #083657;
+        border-radius: 6rem;
+        color: #083657;
+        font-size: 1.8rem;
+        padding: 2rem 19rem 2rem 2rem; }
+      .offer .container .offers-header .contact-us form input[type=submit] {
+        position: absolute;
+        border: 0;
+        background: #083657;
+        border-radius: 6rem;
+        text-align: center;
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 2.4rem 6.3rem 2.4rem 6.3rem;
+        right: 0; }
+  .offer .offers-main {
+    background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/background.png") no-repeat;
+    background-size: cover; }
+    .offer .offers-main .container {
+      display: flex; }
+    .offer .offers-main .title,
+    .offer .offers-main .text {
+      color: #fff; }
+    .offer .offers-main .main-item {
+      border-right: 4px solid #fff;
+      border-left: 4px solid #fff;
+      width: 29.3rem;
+      padding: 10.5rem 3rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .offer .offers-main .main-item .text {
+        margin: 7.5rem 0 10rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.65rem;
+        width: 23rem; }
+      .offer .offers-main .main-item .title {
+        font-size: 2.4rem;
+        font-weight: 700; }
+      .offer .offers-main .main-item .show-more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; }
+        .offer .offers-main .main-item .show-more .title {
+          margin-bottom: 1rem;
+          font-size: 2rem; }
+        .offer .offers-main .main-item .show-more img {
+          width: 3rem;
+          margin-bottom: 0; }
+    .offer .offers-main .main-item:first-child {
+      border-left: 8px solid #fff; }
+    .offer .offers-main .main-item:last-child {
+      border-right: 8px solid #fff; }
+  .offer .offers-spec {
+    padding: 10rem 0 8.5rem; }
+    .offer .offers-spec .container .titleBig {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 6rem;
+      width: 83.5rem;
+      line-height: 7.3rem; }
+    .offer .offers-spec .container .spec-items {
+      display: flex; }
+      .offer .offers-spec .container .spec-items .item-container {
+        padding: 4rem 4rem 10rem;
+        background: #fff;
+        box-shadow: 8px 20px 70px rgba(0, 0, 0, 0.09);
+        margin-right: 5.3rem; }
+        .offer .offers-spec .container .spec-items .item-container .title {
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: #000;
+          width: 18.5rem; }
+        .offer .offers-spec .container .spec-items .item-container .text {
+          margin: 5rem 0 6rem;
+          font-size: 1.8rem;
+          color: #000000;
+          width: 38.7rem; }
+        .offer .offers-spec .container .spec-items .item-container .text:last-child {
+          margin: 0; }
+        .offer .offers-spec .container .spec-items .item-container img {
+          width: 5rem;
+          margin-bottom: 3rem; }
+      .offer .offers-spec .container .spec-items .item-container:last-child {
+        margin-right: 0; }
+        .offer .offers-spec .container .spec-items .item-container:last-child img {
+          width: 8.3rem; }

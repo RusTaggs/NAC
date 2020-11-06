@@ -1,0 +1,169 @@
+.offer{
+    padding-top: 12rem;
+
+    .container{
+        img{
+            margin-bottom: 5.65rem;
+            width: 18.3rem;
+        }
+        .titleBig{
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 6rem;
+            width: 85rem;
+            line-height: 6rem;
+        }
+        .titleBig:last-child{
+            margin-bottom: 1rem;
+        }
+        .offers-header{
+
+            
+
+            .contact-us{
+                margin-bottom: 12rem;
+                display: flex;
+                align-items: center;
+                .button{
+                    padding: 2.5rem 6.5rem;
+                    background: #083657;
+                    font-size: 1.4rem;
+                    margin-right: 4rem;
+                }
+
+                form{
+                    position: relative;
+                    input[type=text]{
+                        border: 1px solid #083657;
+                        border-radius: 6rem;
+                        color: #083657;
+                        font-size: 1.8rem;
+                        padding: 2rem 19rem 2rem 2rem;
+                        
+                    }
+                    input[type=submit]{
+                        position: absolute;
+                        border: 0;
+                        background: #083657;
+                        border-radius: 6rem;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 1.4rem;
+                        padding: 2.4rem 6.3rem 2.4rem 6.3rem;
+                        right: 0;
+                    }
+                }
+            }
+
+        }
+        
+    }
+    .offers-main{
+        background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
+        background-size: cover;
+        .container{
+            display: flex;
+        }
+        .title,
+        .text{
+            color: #fff;
+        }
+
+        .main-item{
+            border-right: 4px solid #fff ;
+            border-left: 4px solid #fff;
+            width: 29.3rem;
+            padding: 10.5rem 3rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .text{
+                margin: 7.5rem 0 10rem;
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 2.65rem;
+                width: 23rem;
+            }
+            .title{
+                font-size: 2.4rem;
+                font-weight: 700;
+            }
+
+            .show-more{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .title{
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                }
+                img{
+                    width: 3rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .main-item:first-child{
+            border-left: 8px solid #fff;
+        }
+        .main-item:last-child{
+            border-right: 8px solid #fff;
+        }
+    }
+    .offers-spec{
+        padding: 10rem 0 8.5rem;
+        .container{
+            
+            .titleBig{
+                font-size: 5rem;
+                font-weight: 700;
+                color: #000;
+                
+                margin-bottom: 6rem;
+                width: 83.5rem;
+                line-height: 7.3rem;
+            }
+            .spec-items{
+                display: flex;
+                .item-container{
+                    padding: 4rem 4rem 10rem;
+                    background: #fff;
+                    box-shadow: 8px 20px 70px rgba(0, 0, 0, 0.09);
+                    margin-right: 5.3rem;
+
+                    .title{
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        color: #000;
+                        width: 18.5rem;
+                    }
+                    .text{
+                        margin: 5rem 0 6rem;
+                        font-size: 1.8rem;
+                        color: #000000;
+                        width: 38.7rem;
+                    }
+                    .text:last-child{
+                        margin: 0;
+                    }
+                    img{
+                        
+                        width: 5rem;
+                        margin-bottom: 3rem;
+                    }
+                    
+                }
+                .item-container:last-child{
+                    margin-right: 0;
+                    img{
+                        width: 8.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
