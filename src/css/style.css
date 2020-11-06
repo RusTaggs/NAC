@@ -228,7 +228,7 @@ body {
   font-weight: 400; }
 
 .link::after {
-  content: ">>";
+  content: ">";
   margin-left: 1.2rem; }
 
 .title {
@@ -323,65 +323,64 @@ main .offers-item {
 
 footer {
   background: linear-gradient(108.32deg, #001726 40.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
-  background-size: cover; }
-  footer .container {
-    padding-top: 10rem;
-    padding-bottom: 10rem; }
-    footer .container .titleBig {
-      line-height: 6.6rem;
-      color: #fff; }
-    footer .container .footer-form {
-      margin-top: 1.3rem; }
-      footer .container .footer-form .form-main {
-        display: flex;
-        margin-top: 5rem; }
-        footer .container .footer-form .form-main input, footer .container .footer-form .form-main textarea {
-          padding: 1.8rem 1.8rem;
-          border: 1px solid #999;
-          border-radius: 4px;
-          background: none;
-          font-size: 1.4rem;
-          color: #d1d1d1; }
-        footer .container .footer-form .form-main .main-left {
-          margin-right: 8.8rem; }
-          footer .container .footer-form .form-main .main-left p {
-            margin-top: 3.3rem; }
-          footer .container .footer-form .form-main .main-left p:first-child {
-            margin-top: 0; }
-          footer .container .footer-form .form-main .main-left input {
-            margin-top: 1rem;
-            width: 33.5rem; }
-          footer .container .footer-form .form-main .main-left input:last-child {
-            margin-bottom: 3.2rem; }
-        footer .container .footer-form .form-main .main-right textarea {
+  background-size: cover;
+  padding-top: 10rem; }
+  footer .titleBig {
+    line-height: 6.6rem;
+    color: #fff; }
+  footer .footer-form .container {
+    margin-top: 1.3rem; }
+    footer .footer-form .container .form-main {
+      display: flex;
+      margin-top: 5rem; }
+      footer .footer-form .container .form-main input, footer .footer-form .container .form-main textarea {
+        padding: 1.8rem 1.8rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        background: none;
+        font-size: 1.4rem;
+        color: #d1d1d1; }
+      footer .footer-form .container .form-main .main-left {
+        margin-right: 8.8rem; }
+        footer .footer-form .container .form-main .main-left p {
+          margin-top: 3.3rem; }
+        footer .footer-form .container .form-main .main-left p:first-child {
+          margin-top: 0; }
+        footer .footer-form .container .form-main .main-left input {
           margin-top: 1rem;
-          width: 50rem;
-          height: 29.2rem; }
-        footer .container .footer-form .form-main p::after {
-          content: "*";
-          color: #FC8787;
-          margin-left: 0.5rem; }
-      footer .container .footer-form .form-confirm {
-        display: flex;
-        margin-bottom: 3.6rem; }
-        footer .container .footer-form .form-confirm input {
-          width: 2.3rem;
-          height: 2.3rem;
-          background: #83CEFD;
-          margin-right: 2rem; }
-        footer .container .footer-form .form-confirm span {
-          margin-top: .5rem;
-          width: 38rem;
-          font-size: 1.4rem;
-          line-height: 1.95rem; }
-    footer .container .button {
-      padding: 2.2rem 7rem;
-      border: 0; }
-    footer .container .text {
-      font-size: 1.8rem;
-      color: #fff; }
+          width: 33.5rem; }
+        footer .footer-form .container .form-main .main-left input:last-child {
+          margin-bottom: 3.2rem; }
+      footer .footer-form .container .form-main .main-right textarea {
+        margin-top: 1rem;
+        width: 50rem;
+        height: 29.2rem; }
+      footer .footer-form .container .form-main p::after {
+        content: "*";
+        color: #FC8787;
+        margin-left: 0.5rem; }
+    footer .footer-form .container .form-confirm {
+      display: flex;
+      margin-bottom: 3.6rem; }
+      footer .footer-form .container .form-confirm input {
+        width: 2.3rem;
+        height: 2.3rem;
+        background: #83CEFD;
+        margin-right: 2rem; }
+      footer .footer-form .container .form-confirm span {
+        margin-top: .5rem;
+        width: 38rem;
+        font-size: 1.4rem;
+        line-height: 1.95rem; }
+  footer .button {
+    padding: 2.2rem 7rem;
+    border: 0; }
+  footer .text {
+    font-size: 1.8rem;
+    color: #fff; }
   footer .footer-main {
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 10rem; }
     footer .footer-main .container {
       padding: 4.2rem 0;
       display: flex;
@@ -398,6 +397,144 @@ footer {
         margin: 0; }
       footer .footer-main .container .contact-icons a:last-child {
         margin: 0; }
+
+@media (max-width: 48rem) {
+  .container {
+    width: 100%;
+    max-width: auto;
+    padding: 0 4.4rem; }
+  .header .header-menu,
+  .header .menu-bottom {
+    display: none; }
+  .header .header-menu__mobile {
+    height: 12.5rem;
+    width: 100%;
+    background: #001828;
+    display: flex;
+    align-items: center; }
+    .header .header-menu__mobile .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header .header-menu__mobile .container .logo {
+        width: 13rem; }
+      .header .header-menu__mobile .container .toggle-bar {
+        width: 5.1rem;
+        margin-top: 1rem;
+        margin-left: 1rem; }
+        .header .header-menu__mobile .container .toggle-bar span {
+          width: 4.5rem;
+          height: 0.13rem;
+          background: #fff;
+          display: block;
+          margin-bottom: 1.2rem; }
+      .header .header-menu__mobile .container img:last-child {
+        width: 4.5rem;
+        margin-right: 1rem; }
+  .header .header-main .container .main-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    padding: 53.5rem 0 9rem; }
+    .header .header-main .container .main-text .titleBig {
+      width: 65rem;
+      margin-bottom: 2rem; }
+    .header .header-main .container .main-text .text {
+      width: 65rem;
+      line-height: 3.9rem;
+      margin-bottom: 13.5rem;
+      font-size: 2.6rem;
+      margin-top: 2.3rem; }
+    .header .header-main .container .main-text .button {
+      padding: 5rem 11.5rem;
+      font-size: 3.6rem;
+      border-radius: 10rem; }
+  main .container .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 11.4rem 0 5.6rem; }
+    main .container .offers .offers-item {
+      width: 71rem;
+      height: 48.7rem;
+      margin-bottom: 8.5rem;
+      padding: 7rem 8rem 3rem; }
+      main .container .offers .offers-item .item-text {
+        width: 32rem; }
+      main .container .offers .offers-item .title {
+        font-size: 5.2rem;
+        line-height: 6.5rem; }
+      main .container .offers .offers-item .text {
+        font-size: 3rem;
+        margin-top: 2.5rem;
+        line-height: 4rem;
+        margin-bottom: 8.5rem; }
+      main .container .offers .offers-item .link {
+        font-size: 3.6rem; }
+  footer .footer-form .container {
+    margin-bottom: 10.2rem; }
+    footer .footer-form .container .titleBig {
+      font-size: 5.2rem;
+      line-height: 1.7rem; }
+    footer .footer-form .container .form-main {
+      margin-top: 12rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 1rem; }
+      footer .footer-form .container .form-main .main-left {
+        margin-right: 0;
+        margin-bottom: 2.8rem; }
+        footer .footer-form .container .form-main .main-left .text {
+          font-size: 3.5rem; }
+        footer .footer-form .container .form-main .main-left input {
+          margin-top: 2.2rem;
+          width: 69rem;
+          margin-bottom: 3.7rem;
+          font-size: 2.8rem;
+          padding: 3.1rem 3.5rem; }
+      footer .footer-form .container .form-main .main-right {
+        margin-right: 0;
+        margin-bottom: 8.5rem; }
+        footer .footer-form .container .form-main .main-right .text {
+          font-size: 3.8rem; }
+        footer .footer-form .container .form-main .main-right textarea {
+          margin-top: 2.2rem;
+          width: 69rem;
+          height: 14rem;
+          font-size: 2.4rem;
+          padding: 1.8rem 4rem; }
+    footer .footer-form .container .form-confirm {
+      margin-left: 1rem; }
+      footer .footer-form .container .form-confirm input {
+        width: 5.2rem;
+        height: 5.2rem;
+        margin-right: 5rem; }
+      footer .footer-form .container .form-confirm .text {
+        margin-top: 1rem;
+        width: 66rem;
+        font-size: 2.8rem;
+        line-height: 3.5rem; }
+    footer .footer-form .container .button {
+      display: none; }
+  footer .footer-form .button {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    padding: 3.5rem 7rem;
+    font-size: 2.7rem; }
+  footer .footer-main .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 18.2rem; }
+    footer .footer-main .container .text {
+      margin: 5rem 0;
+      font-size: 2.6rem; }
+    footer .footer-main .container .text:first-child {
+      margin: 0; } }
 
 .itsm {
   padding-top: 8rem;
