@@ -167,3 +167,128 @@
         }
     }
 }
+
+@media(max-width: 48rem){
+    .offer{
+
+        .container{
+            .titleBig{
+                width: 70rem;
+                
+            }
+            .titleBig:last-child{
+                margin-bottom: 4rem;
+            }
+            .offers-header{
+                .titleBig{
+                    width: 65rem;
+                    margin-bottom: 10rem;
+                }
+                .contact-us{
+                    .button{
+                        padding: 4.5rem 14.5rem;
+                        background: #083657;
+                        font-size: 2.8rem;
+                        margin-right: 4rem;
+                    }
+                    form{
+    
+                        .button.mobile{
+    
+                            border: 0;
+                            border-radius: 15rem;
+                            padding: 3.6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+    
+                            img{
+                                width: 5rem;
+                                margin-bottom: 0;
+                            }
+                        }
+                        input{
+                            display: none;
+                        }
+                    }
+                }
+    
+                
+            }
+        }
+
+        
+        .offers-spec{
+            .container{
+                .titleBig{
+                    width: 60rem;
+                }
+                .spec-items{
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    .item-container{
+                        margin-right: 0;
+                        margin-bottom: 5rem;
+
+                        .title{
+                            font-size: 4.2rem;
+                            width: 32.5rem;
+                        }
+                        .text{
+                            margin: 5rem 0 6rem;
+                            font-size: 3.6rem;
+                            width: 64.7rem;
+                        }
+                        img{
+                            width: 7rem;
+                            margin-bottom: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .offers-main{
+            
+            .container{
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                .main-item{
+                    width: 100%;
+                    border-left: 4.4rem solid #fff;
+                    border-right: 4.4rem solid #fff;
+                    border-bottom: 4rem solid #fff;
+                    padding: 5.5rem 5rem 3rem;
+                    justify-content: start;
+                    align-items: start;
+
+                    .title{
+                        font-size: 4.5rem;
+                        font-weight: 400;
+                        width: 41rem;
+                    }
+                    .text{
+                        width: 62rem;
+                        margin: 4.5rem 0 5rem;
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                        line-height: 4.65rem;
+                    }
+                    .show-more{
+                        margin: 0 auto;
+                        .title{
+                            width: auto;
+                            font-size: 2.8rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

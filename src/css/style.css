@@ -1113,3 +1113,77 @@ header .header-404 {
         margin-right: 0; }
         .offer .offers-spec .container .spec-items .item-container:last-child img {
           width: 8.3rem; }
+
+@media (max-width: 48rem) {
+  .offer .container .titleBig {
+    width: 70rem; }
+  .offer .container .titleBig:last-child {
+    margin-bottom: 4rem; }
+  .offer .container .offers-header .titleBig {
+    width: 65rem;
+    margin-bottom: 10rem; }
+  .offer .container .offers-header .contact-us .button {
+    padding: 4.5rem 14.5rem;
+    background: #083657;
+    font-size: 2.8rem;
+    margin-right: 4rem; }
+  .offer .container .offers-header .contact-us form .button.mobile {
+    border: 0;
+    border-radius: 15rem;
+    padding: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .offer .container .offers-header .contact-us form .button.mobile img {
+      width: 5rem;
+      margin-bottom: 0; }
+  .offer .container .offers-header .contact-us form input {
+    display: none; }
+  .offer .offers-spec .container .titleBig {
+    width: 60rem; }
+  .offer .offers-spec .container .spec-items {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .offer .offers-spec .container .spec-items .item-container {
+      margin-right: 0;
+      margin-bottom: 5rem; }
+      .offer .offers-spec .container .spec-items .item-container .title {
+        font-size: 4.2rem;
+        width: 32.5rem; }
+      .offer .offers-spec .container .spec-items .item-container .text {
+        margin: 5rem 0 6rem;
+        font-size: 3.6rem;
+        width: 64.7rem; }
+      .offer .offers-spec .container .spec-items .item-container img {
+        width: 7rem;
+        margin-bottom: 5rem; }
+  .offer .offers-main .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .offer .offers-main .container .main-item {
+      width: 100%;
+      border-left: 4.4rem solid #fff;
+      border-right: 4.4rem solid #fff;
+      border-bottom: 4rem solid #fff;
+      padding: 5.5rem 5rem 3rem;
+      justify-content: start;
+      align-items: start; }
+      .offer .offers-main .container .main-item .title {
+        font-size: 4.5rem;
+        font-weight: 400;
+        width: 41rem; }
+      .offer .offers-main .container .main-item .text {
+        width: 62rem;
+        margin: 4.5rem 0 5rem;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 4.65rem; }
+      .offer .offers-main .container .main-item .show-more {
+        margin: 0 auto; }
+        .offer .offers-main .container .main-item .show-more .title {
+          width: auto;
+          font-size: 2.8rem; } }
