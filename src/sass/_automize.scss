@@ -56,3 +56,11 @@
         }
     }
 }
+
+@media(max-width: 48rem){
+    .automize{
+        .automize-container{
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -51,3 +51,21 @@
         }
     }
 }
+
+@media(max-width: 48rem){
+    .itsm{
+        .group1{
+            flex-wrap: wrap;
+            .itsm-item2{
+                margin-top: 4rem;
+            }
+        }
+        .group2{
+            flex-wrap: wrap-reverse;
+
+            .itsm-item2{
+                margin-top: 4rem;
+            }
+        }
+    }
+}

@@ -54,3 +54,38 @@
     }
 
 }
+
+@media(max-width:48rem){
+    .contact{
+
+        display: flex;
+            flex-wrap: wrap;
+        .container2{
+            width: 95%;
+            padding: 0 4.4rem;
+            margin: 0;
+            .contact-container{
+                width: 100%;
+
+                .titleBig{
+                    margin-bottom: 5.5rem;
+                }
+
+                .contact-item{
+                    .title{
+                        font-size: 3.2rem;
+                    }
+                }
+                .item-text{
+                    
+                    .text{
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

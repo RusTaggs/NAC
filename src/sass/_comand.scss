@@ -45,3 +45,28 @@
         margin-right: 0;
     }
 }
+
+@media(max-width: 48rem){
+
+    .comand{
+        .comand-container{
+            justify-content: center;
+        }
+        .comand-item{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img{
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+        .comand-item:nth-child(3n+3){
+            margin-right: 5rem;
+        }
+        .comand-item:last-child{
+            margin-right: 5rem;
+        }
+    }
+}

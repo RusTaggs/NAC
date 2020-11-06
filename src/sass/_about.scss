@@ -42,3 +42,26 @@
         
     }
 }
+
+@media(max-width: 48rem){
+    .about{
+
+        .title{
+            width: auto;
+            font-weight: 700;
+        }
+        .about-items{
+            flex-wrap: wrap;
+            .item{
+                width: 60.4rem;
+                display: flex;
+                align-items: start;
+                margin-bottom: 7rem;
+
+                img{
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+}

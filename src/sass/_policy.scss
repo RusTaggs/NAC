@@ -23,4 +23,13 @@
         font-size: 2.4rem;
         margin-bottom: 3.5rem;
     }
+
+}
+
+@media(max-width:48rem){
+    .policy{
+        .policy-text{
+            width: auto;
+        }
+    }
 }

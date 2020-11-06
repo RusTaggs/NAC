@@ -101,6 +101,9 @@ header{
 			}
 		}
 	}
+	.header-menu__mobile{
+		display: none;
+	}
 	.header-main{
 		.container{
 			.main-text{
@@ -302,8 +305,10 @@ footer{
 				align-items: center;
 				justify-content: space-between;
 
-				.logo{
-					width: 13rem;
+				a{
+					.logo{
+						width: 13rem;
+					}
 				}
 				.toggle-bar{
 					width: 5.1rem;
@@ -317,7 +322,7 @@ footer{
 						margin-bottom: 1.2rem;
 					}
 				}
-				img:last-child{
+				img{
 					width: 4.5rem;
     				margin-right: 1rem;
 				}

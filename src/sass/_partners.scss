@@ -58,3 +58,29 @@
     
     
 }
+
+@media(max-width: 48rem){
+    .partners{
+        .group1,
+        .group2{
+            flex-wrap: wrap;
+
+            .partners-item:first-child{
+                margin-right: 0;
+                
+            }
+            .partners-item:last-child{
+                margin: 8rem 0;
+                
+            }
+        }
+        .group1{
+            margin-bottom: 0;
+        }
+        .partners-item{
+            margin: 8rem 0;
+
+        }
+        
+    }
+}
