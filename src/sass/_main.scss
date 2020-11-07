@@ -10,6 +10,20 @@ body{
 	background: #83CEFD;
 	border-radius: 6rem;
 	color: $txtWhite;
+	transition: .3s ease-in;
+	cursor: pointer;
+}
+.button:hover{
+	background: #55A7D9;
+}
+.button.success{
+	background: #71F486;
+}
+.button.error{
+	background: #FF7171;
+}
+.mobile{
+	display: none;
 }
 
 .text{
@@ -39,6 +53,47 @@ body{
 .container{
 	max-width: 150rem;
 	width: 100%;
+}
+
+.cookie{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #001828;
+	padding: 2.3rem 7.5rem;
+	width: 105.7rem;
+	position: fixed;
+	z-index: 3;
+	top: 80vh;
+	left: 20%;
+	img{
+		margin-right: 5rem;
+	}
+	.text,
+	.link{
+		color: #fff;
+	}
+
+	.text-container{
+		width: 50rem;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+	}
+	.text{
+		font-size: 1.8rem;
+		font-weight: 700;
+
+	}
+	.link{
+		text-decoration: underline;
+		font-weight: 400;
+		font-size: 1.4rem;
+	}
+	.link::after{
+		content: "";
+	}
 }
 
 header{
@@ -91,6 +146,57 @@ header{
 					display: flex;
 					justify-content: space-between;
 					
+					li{
+						position: relative;
+						a{
+							padding: 1.5rem 3.5rem 1.8rem;
+							transition: .3s ease-in;
+						}
+						a.active{
+							color: #fff;
+							background: #001828;
+						}
+
+						.sub-menu{
+							display: none;
+							z-index: 2;
+							position: absolute;
+							top: 3.9rem;
+							color: #fff;
+							background:  #001828;
+							padding: 1.7rem 3.2rem;
+
+							.title{
+								color: #fff;
+								margin-bottom: 2rem;
+							}
+							.link{
+								color: #fff;
+								padding: 1rem 0;
+								display: inline-block;
+							}
+							.link::after{
+								content: "";
+							}
+
+							.sub-menu__left{
+								width: 24rem;
+								margin-right: 3rem;
+							}
+							.sub-menu__right{
+								width: 30rem;
+							}
+						}
+						.sub-menu.last{
+							right: 0rem;
+
+							.sub-menu__left{
+								width: 10rem;							}
+							.sub-menu__right{
+								width: 8rem;
+							}
+						}
+					}
 					
 				}
 
@@ -283,6 +389,9 @@ footer{
 }
 
 @media(max-width: 48rem){
+	.mobile{
+		display: block;
+	}
 	.container{
 		width: 100%;
 		max-width: auto;

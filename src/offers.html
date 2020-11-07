@@ -13,6 +13,14 @@
 
 </head>
 <body>
+	<div class="cookie">
+		<img src="img/cookie.png" alt="">
+		<div class="text-container">
+			<p class="text">Мы используем файлы cookie, чтобы анализировать трафик, подбирать для вас подходящий контент.</p>
+			<a href="" class="link">Подробнее</a>
+		</div>
+		<p class="button close-cookie">Понятно</p>
+	</div>
 	<header class="header">
 		<div class="header-menu">
 			<div class="container">
@@ -31,12 +39,76 @@
 			<div class="menu-bottom">
 				<div class="container">
 
-					<ul>
-						<li><a href="itsm.html" class="text">ITSM-консалтинг</a></li>
-						<li><a href="automize.html" class="text">Автоматизация ИТ-процессов</a></li>
-						<li><a href="managment.html" class="text">Управление ИТ-инфраструктурой</a></li>
-						<li><a href="learning.html" class="text">Обучение</a></li>
-						<li><a href="About.html" class="text">О нас</a></li>
+					<ul class="menu">
+						<li><a href="itsm.html" class="text sub">ITSM-консалтинг</a></li>
+						<li class="sub"><a href="automize.html" class="text sub">Автоматизация ИТ-процессов</a>
+							<ul class="sub-menu">
+								<div class="sub-menu__left">
+									<p class="title">Продукты</p>
+									<a href="" class="link">Micro Focus Service Manager</a>
+									<a href="" class="link">Ivanti Service Manager</a>
+									<a href="" class="link">Ivanti Asset Manager</a>
+									<a href="" class="link">SimpleOne</a>
+									<a href="" class="link">Jira Software/Jira Service Desk</a> 
+									<a href="" class="link">iTop</a>
+								</div>
+								<div class="sub-menu__right">
+									<p class="title">Задачи</p>
+									<a href="" class="link">Выбрать ITSM-систему</a>
+									<a href="" class="link">Систематизировать работу с обращениями пользователей</a>
+									<a href="" class="link">Внедрить юзерфрендли портал самообслуживания</a>
+									<a href="" class="link">Обеспечить поддержку DevOps</a>
+									<a href="" class="link">Автоматизировать не ИТ- процессы</a>
+									<a href="" class="link">Импортозамещение</a>
+									<a href="" class="link">Минимальный ТСО</a>
+								</div>
+							</ul>
+						</li>
+						
+						<li><a href="managment.html" class="text sub">Управление ИТ-инфраструктурой</a>
+							<ul class="sub-menu">
+								<div class="sub-menu__left">
+									<p class="title">Продукты</p>
+									<a href="" class="link">Micro Focus Service Manager</a>
+									<a href="" class="link">Ivanti Service Manager</a>
+									<a href="" class="link">Ivanti Asset Manager</a>
+									<a href="" class="link">SimpleOne</a>
+									<a href="" class="link">Jira Software/Jira Service Desk</a> 
+									<a href="" class="link">iTop</a>
+								</div>
+								<div class="sub-menu__right">
+									<p class="title">Задачи</p>
+									<a href="" class="link">Выбрать ITSM-систему</a>
+									<a href="" class="link">Систематизировать работу с обращениями пользователей</a>
+									<a href="" class="link">Внедрить юзерфрендли портал самообслуживания</a>
+									<a href="" class="link">Обеспечить поддержку DevOps</a>
+									<a href="" class="link">Автоматизировать не ИТ- процессы</a>
+									<a href="" class="link">Импортозамещение</a>
+									<a href="" class="link">Минимальный ТСО</a>
+								</div>
+							</ul>
+						</li>
+						
+						<li><a href="learning.html" class="text sub">Обучение</a></li>
+						<li><a href="About.html" class="text sub">О нас</a>
+							<ul class="sub-menu last">
+								<div class="sub-menu__left">
+									
+									<a href="about.html" class="link">О компании</a>
+									<a href="" class="link">Принципы</a>
+									<a href="comand.html" class="link">Команда</a>
+									<a href="partners.html" class="link">Партнеры</a>
+									
+								</div>
+								<div class="sub-menu__right">
+									
+									<a href="vacancies.html" class="link">Вакансии</a>
+									<a href="contact.html" class="link">Контакты</a>
+									<a href="projects.html" class="link">Проекты</a>
+									
+								</div>
+							</ul>
+						</li>
 					</ul>
 
 				</div>
@@ -77,51 +149,179 @@
 				
 			</div>
 			<div class="offers-main">
-				<div class="container">
-					<div class="main-item">
-						<p class="title">Подход Enterprise Service Management</p>
-						<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
-						<div class="show-more">
-							<p class="title">Подробнее</p>
-							<img src="img/showmore.png" alt="">
+				<div class="main-container">
+					<div class="container">
+						<div class="main-item" >
+							<p class="title">Подход Enterprise Service Management</p>
+							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							<div class="show-more" data-tab='1'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+							
+						</div>
+						
+						<div class="main-item" >
+							<p class="title">Подход Enterprise Service Management</p>
+							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							<div class="show-more" data-tab='2'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						<div class="main-item" >
+							<p class="title">Подход Enterprise Service Management</p>
+							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							<div class="show-more" data-tab='3'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						<div class="main-item" >
+							<p class="title">Подход Enterprise Service Management</p>
+							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							<div class="show-more" data-tab='4'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						<div class="main-item" >
+							<p class="title">Подход Enterprise Service Management</p>
+							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							<div class="show-more" data-tab='5'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="container offer-i">
+					<div class="offer-info" data-tab="1">
+						<div class="close-info text">X</div>
+						<div class="info-container">
+							<div class="info-left">
+								<div class="left-item active">
+									<p class="text">Автоматизируйте управление любыми услугами</p>
+								</div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+							</div>
+							<div class="info-right">
+								<div class="right-item active">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
+								<div class="right-item"></div>
+								<div class="right-item"></div>
+							</div>
 						</div>
 					</div>
-					<div class="main-item">
-						<p class="title">Подход Enterprise Service Management</p>
-						<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
-						<div class="show-more">
-							<p class="title">Подробнее</p>
-							<img src="img/showmore.png" alt="">
+					<div class="offer-info" data-tab="2">
+						<div class="close-info text">X</div>
+						<div class="info-container">
+							<div class="info-left">
+								<div class="left-item active">
+									<p class="text">Автоматизируйте управление любыми услугами</p>
+								</div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+							</div>
+							<div class="info-right">
+								<div class="right-item active">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
+								<div class="right-item"></div>
+								<div class="right-item"></div>
+							</div>
 						</div>
 					</div>
-					<div class="main-item">
-						<p class="title">Подход Enterprise Service Management</p>
-						<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
-						<div class="show-more">
-							<p class="title">Подробнее</p>
-							<img src="img/showmore.png" alt="">
+					<div class="offer-info" data-tab="3">
+						<div class="close-info text">X</div>
+						<div class="info-container">
+							<div class="info-left">
+								<div class="left-item active">
+									<p class="text">Автоматизируйте управление любыми услугами</p>
+								</div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+							</div>
+							<div class="info-right">
+								<div class="right-item active">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
+								<div class="right-item"></div>
+								<div class="right-item"></div>
+							</div>
 						</div>
 					</div>
-					<div class="main-item">
-						<p class="title">Подход Enterprise Service Management</p>
-						<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
-						<div class="show-more">
-							<p class="title">Подробнее</p>
-							<img src="img/showmore.png" alt="">
+					<div class="offer-info" data-tab="4">
+						<div class="close-info text">X</div>
+						<div class="info-container">
+							<div class="info-left">
+								<div class="left-item active">
+									<p class="text">Автоматизируйте управление любыми услугами</p>
+								</div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+							</div>
+							<div class="info-right">
+								<div class="right-item active">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
+								<div class="right-item"></div>
+								<div class="right-item"></div>
+							</div>
 						</div>
 					</div>
-					<div class="main-item">
-						<p class="title">Подход Enterprise Service Management</p>
-						<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
-						<div class="show-more">
-							<p class="title">Подробнее</p>
-							<img src="img/showmore.png" alt="">
+					<div class="offer-info" data-tab="5">
+						<div class="close-info text">X</div>
+						<div class="info-container">
+							<div class="info-left">
+								<div class="left-item active">
+									<p class="text">Автоматизируйте управление любыми услугами</p>
+								</div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+							</div>
+							<div class="info-right">
+								<div class="right-item active">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
+								<div class="right-item"></div>
+								<div class="right-item"></div>
+							</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
+			
 			<div class="offers-spec">
+				
 				<div class="container">
 					<p class="titleBig">
 						Cпециалисты NAS Technologies помогут вам при внедрении, развитии и поддержке системы
@@ -179,14 +379,14 @@
 				</div>
 				<input type="submit" class="button" value="Отправить заявку">
 			</div>
-			<input type="submit" class="button" value="Отправить заявку">
+			<input type="submit" class="button mobile" value="Отправить заявку">
 		</form>
 
 	
 	<div class="footer-main">
 		<div class="container">
 			<p class="text">© NAS Technologies 2020</p>
-			<p class="text">Политика конфиденциальности</p>
+			<a href="policy.html" class="text">Политика конфиденциальности</a>
 			<div class="contact-icons">
 				<a href=""><img src="img/instagram-ico.png" alt=""></a>
 				<a href=""><img src="img/instagram-ico.png" alt=""></a>

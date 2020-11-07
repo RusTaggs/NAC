@@ -215,7 +215,21 @@ body {
   font-weight: 700;
   background: #83CEFD;
   border-radius: 6rem;
-  color: #fff; }
+  color: #fff;
+  transition: .3s ease-in;
+  cursor: pointer; }
+
+.button:hover {
+  background: #55A7D9; }
+
+.button.success {
+  background: #71F486; }
+
+.button.error {
+  background: #FF7171; }
+
+.mobile {
+  display: none; }
 
 .text {
   font-size: 1.6rem;
@@ -243,6 +257,38 @@ body {
 .container {
   max-width: 150rem;
   width: 100%; }
+
+.cookie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #001828;
+  padding: 2.3rem 7.5rem;
+  width: 105.7rem;
+  position: fixed;
+  z-index: 3;
+  top: 80vh;
+  left: 20%; }
+  .cookie img {
+    margin-right: 5rem; }
+  .cookie .text,
+  .cookie .link {
+    color: #fff; }
+  .cookie .text-container {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; }
+  .cookie .text {
+    font-size: 1.8rem;
+    font-weight: 700; }
+  .cookie .link {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 1.4rem; }
+  .cookie .link::after {
+    content: ""; }
 
 header {
   background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/background.png") no-repeat;
@@ -281,6 +327,42 @@ header {
       header .header-menu .menu-bottom .container ul {
         display: flex;
         justify-content: space-between; }
+        header .header-menu .menu-bottom .container ul li {
+          position: relative; }
+          header .header-menu .menu-bottom .container ul li a {
+            padding: 1.5rem 3.5rem 1.8rem;
+            transition: .3s ease-in; }
+          header .header-menu .menu-bottom .container ul li a.active {
+            color: #fff;
+            background: #001828; }
+          header .header-menu .menu-bottom .container ul li .sub-menu {
+            display: none;
+            z-index: 2;
+            position: absolute;
+            top: 3.9rem;
+            color: #fff;
+            background: #001828;
+            padding: 1.7rem 3.2rem; }
+            header .header-menu .menu-bottom .container ul li .sub-menu .title {
+              color: #fff;
+              margin-bottom: 2rem; }
+            header .header-menu .menu-bottom .container ul li .sub-menu .link {
+              color: #fff;
+              padding: 1rem 0;
+              display: inline-block; }
+            header .header-menu .menu-bottom .container ul li .sub-menu .link::after {
+              content: ""; }
+            header .header-menu .menu-bottom .container ul li .sub-menu .sub-menu__left {
+              width: 24rem;
+              margin-right: 3rem; }
+            header .header-menu .menu-bottom .container ul li .sub-menu .sub-menu__right {
+              width: 30rem; }
+          header .header-menu .menu-bottom .container ul li .sub-menu.last {
+            right: 0rem; }
+            header .header-menu .menu-bottom .container ul li .sub-menu.last .sub-menu__left {
+              width: 10rem; }
+            header .header-menu .menu-bottom .container ul li .sub-menu.last .sub-menu__right {
+              width: 8rem; }
       header .header-menu .menu-bottom .container .text {
         font-size: 1.8rem;
         font-weight: 700; }
@@ -401,6 +483,8 @@ footer {
         margin: 0; }
 
 @media (max-width: 48rem) {
+  .mobile {
+    display: block; }
   .container {
     width: 100%;
     max-width: auto;
@@ -997,6 +1081,9 @@ header .header-404 {
 
 .offer {
   padding-top: 12rem; }
+  .offer .rotate {
+    transform: rotateZ(180deg);
+    transition: .3s ease-in; }
   .offer .container img {
     margin-bottom: 5.65rem;
     width: 18.3rem; }
@@ -1018,6 +1105,8 @@ header .header-404 {
       background: #083657;
       font-size: 1.4rem;
       margin-right: 4rem; }
+    .offer .container .offers-header .contact-us .button:hover {
+      background: #195784; }
     .offer .container .offers-header .contact-us form {
       position: relative; }
       .offer .container .offers-header .contact-us form input[type=text] {
@@ -1035,49 +1124,88 @@ header .header-404 {
         color: #fff;
         font-size: 1.4rem;
         padding: 2.4rem 6.3rem 2.4rem 6.3rem;
-        right: 0; }
-  .offer .offers-main {
+        right: 0;
+        transition: .3s ease-in; }
+      .offer .container .offers-header .contact-us form input[type=submit]:hover {
+        background: #195784; }
+  .offer .offers-main .main-container {
     background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/background.png") no-repeat;
     background-size: cover; }
-    .offer .offers-main .container {
+    .offer .offers-main .main-container .container {
       display: flex; }
-    .offer .offers-main .title,
-    .offer .offers-main .text {
+    .offer .offers-main .main-container .title,
+    .offer .offers-main .main-container .text {
       color: #fff; }
-    .offer .offers-main .main-item {
+    .offer .offers-main .main-container .main-item {
       border-right: 4px solid #fff;
       border-left: 4px solid #fff;
-      width: 29.3rem;
+      width: 30.3rem;
       padding: 10.5rem 3rem 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
-      .offer .offers-main .main-item .text {
+      align-items: center;
+      position: relative; }
+      .offer .offers-main .main-container .main-item .text {
         margin: 7.5rem 0 10rem;
         font-size: 1.8rem;
         font-weight: 700;
         line-height: 2.65rem;
         width: 23rem; }
-      .offer .offers-main .main-item .title {
+      .offer .offers-main .main-container .main-item .title {
         font-size: 2.4rem;
         font-weight: 700; }
-      .offer .offers-main .main-item .show-more {
+      .offer .offers-main .main-container .main-item .show-more {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         cursor: pointer; }
-        .offer .offers-main .main-item .show-more .title {
+        .offer .offers-main .main-container .main-item .show-more .title {
           margin-bottom: 1rem;
           font-size: 2rem; }
-        .offer .offers-main .main-item .show-more img {
+        .offer .offers-main .main-container .main-item .show-more img {
           width: 3rem;
-          margin-bottom: 0; }
-    .offer .offers-main .main-item:first-child {
+          margin-bottom: 0;
+          transition: .3s ease-in; }
+    .offer .offers-main .main-container .main-item:first-child {
       border-left: 8px solid #fff; }
-    .offer .offers-main .main-item:last-child {
+    .offer .offers-main .main-container .main-item:last-child {
       border-right: 8px solid #fff; }
+  .offer .offers-main .container .offer-info {
+    padding: 3rem;
+    background: #001828;
+    width: 100.5%;
+    z-index: 2;
+    display: none;
+    flex-direction: column; }
+    .offer .offers-main .container .offer-info .text {
+      color: #fff;
+      margin: 0; }
+    .offer .offers-main .container .offer-info .info-container {
+      display: flex; }
+      .offer .offers-main .container .offer-info .info-container .info-left {
+        border: 2px solid #83CEFD;
+        height: 63rem;
+        width: 30rem;
+        margin-right: 10rem; }
+        .offer .offers-main .container .offer-info .info-container .info-left .left-item {
+          font-size: 1.6rem;
+          font-weight: 400;
+          padding: 2rem 1rem;
+          cursor: pointer; }
+        .offer .offers-main .container .offer-info .info-container .info-left .left-item.active {
+          font-weight: 700;
+          background: #83cefd; }
+      .offer .offers-main .container .offer-info .info-container .info-right {
+        width: 80rem; }
+        .offer .offers-main .container .offer-info .info-container .info-right .right-item .text {
+          font-size: 2.4rem;
+          margin-bottom: 3rem; }
+        .offer .offers-main .container .offer-info .info-container .info-right .right-item .text:last-child {
+          margin-bottom: 0; }
+  .offer .offers-main .container .offer-info.active {
+    display: block; }
   .offer .offers-spec {
     padding: 10rem 0 8.5rem; }
     .offer .offers-spec .container .titleBig {

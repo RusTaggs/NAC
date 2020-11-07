@@ -1,6 +1,9 @@
 .offer{
     padding-top: 12rem;
-
+    .rotate{
+        transform: rotateZ(180deg);
+        transition: .3s ease-in;
+    }
     .container{
         img{
             margin-bottom: 5.65rem;
@@ -31,6 +34,9 @@
                     font-size: 1.4rem;
                     margin-right: 4rem;
                 }
+                .button:hover{
+                    background: #195784;
+                }
 
                 form{
                     position: relative;
@@ -52,6 +58,10 @@
                         font-size: 1.4rem;
                         padding: 2.4rem 6.3rem 2.4rem 6.3rem;
                         right: 0;
+                        transition: .3s ease-in;
+                    }
+                    input[type=submit]:hover{
+                        background: #195784;
                     }
                 }
             }
@@ -59,60 +69,127 @@
         }
         
     }
+
+    
+
     .offers-main{
-        background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
-        background-size: cover;
-        .container{
-            display: flex;
-        }
-        .title,
-        .text{
-            color: #fff;
-        }
+        .main-container{
+            background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
+            background-size: cover;
 
-        .main-item{
-            border-right: 4px solid #fff ;
-            border-left: 4px solid #fff;
-            width: 29.3rem;
-            padding: 10.5rem 3rem 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            .container{
+                display: flex;
+            }
+            .title,
             .text{
-                margin: 7.5rem 0 10rem;
-                font-size: 1.8rem;
-                font-weight: 700;
-                line-height: 2.65rem;
-                width: 23rem;
+                color: #fff;
             }
-            .title{
-                font-size: 2.4rem;
-                font-weight: 700;
-            }
-
-            .show-more{
+    
+            .main-item{
+                border-right: 4px solid #fff ;
+                border-left: 4px solid #fff;
+                width: 30.3rem;
+                padding: 10.5rem 3rem 3rem;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                cursor: pointer;
+                align-items: center;
+                position: relative;
+                .text{
+                    margin: 7.5rem 0 10rem;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    line-height: 2.65rem;
+                    width: 23rem;
+                }
                 .title{
-                    margin-bottom: 1rem;
-                    font-size: 2rem;
+                    font-size: 2.4rem;
+                    font-weight: 700;
                 }
-                img{
-                    width: 3rem;
-                    margin-bottom: 0;
+    
+                .show-more{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    .title{
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                    }
+                    img{
+                        width: 3rem;
+                        margin-bottom: 0;
+                        transition: .3s ease-in;
+                    }
                 }
+    
+                
+            }
+            .main-item:first-child{
+                border-left: 8px solid #fff;
+            }
+            .main-item:last-child{
+                border-right: 8px solid #fff;
             }
         }
-        .main-item:first-child{
-            border-left: 8px solid #fff;
+
+        .container{
+            .offer-info{
+                padding: 3rem;
+                background: #001828;
+                
+                
+                width: 100.5%;
+                z-index: 2;
+                display: none;
+                flex-direction: column;
+                .text{
+                    color: #fff;
+                    margin: 0;
+                    
+                }
+                .info-container{
+                    display: flex;
+                    .info-left{
+                        border: 2px solid #83CEFD;
+                        height: 63rem;
+                        width: 30rem;
+                        margin-right: 10rem;
+                        .left-item{
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            padding: 2rem 1rem;
+                            cursor: pointer;
+                        }
+                        .left-item.active{
+                            font-weight: 700;
+                            background: #83cefd;
+                        }
+                        
+                    }
+                    .info-right{
+                        width: 80rem;
+                        .right-item{
+                            
+                            .text{
+                                font-size: 2.4rem;
+                                margin-bottom: 3rem;
+                            }
+                            .text:last-child{
+                                margin-bottom: 0;
+                            }
+    
+                        }
+                    }
+                }
+            }
+            .offer-info.active{
+                display: block;
+            }
         }
-        .main-item:last-child{
-            border-right: 8px solid #fff;
-        }
+
+        
     }
     .offers-spec{
         padding: 10rem 0 8.5rem;
