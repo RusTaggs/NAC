@@ -26,6 +26,10 @@ $(document).ready(function(){
     $('.close-cookie').click(function(){
         $('.cookie').fadeOut();
     });
+
+    $('.toggler').click(function(){
+        $('body').toggleClass('stopper');
+    });
 	
 
     

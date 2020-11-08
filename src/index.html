@@ -21,6 +21,14 @@
 		</div>
 		<p class="button close-cookie">Понятно</p>
 	</div>
+	<div class="cookie mobile">
+		<img src="img/cookie.png" alt="">
+		<div class="text-container">
+			<p class="text">Мы используем файлы cookie, чтобы анализировать трафик, подбирать для вас подходящий контент.</p>
+			<a href="" class="link">Подробнее</a>
+		</div>
+		<p class="button close-cookie">Понятно</p>
+	</div>
 	<header class="header">
 			<div class="header-menu">
 				<div class="container">
@@ -116,11 +124,45 @@
 			</div>
 			<div class="header-menu__mobile">
 				<div class="container">
-					<div class="toggle-bar">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+					<div id="menuToggle">
+						<!--
+						A fake / hidden checkbox is used as click reciever,
+						so you can use the :checked selector on it.
+						-->
+						<input type="checkbox" class="toggler"/>
+						
+						<!--
+						Some spans to act as a hamburger.
+						
+						They are acting like a real hamburger,
+						not that McDonalds stuff.
+						-->
+						
+
+						<span ></span>
+						<span ></span>
+						<span ></span>
+						
+						<!--
+						Too bad the menu has to be inside of the button
+						but hey, it's pure CSS magic.
+						-->
+						
+						<div id="menu">
+							
+							<ul >
+								
+								<li><a href="" class="link">ITSM-консалтинг</a></li>
+								<li><a href="" class="link">Автоматизация ИТ-процессов</a></li>
+								<li><a href="" class="link">Управление ИТ-инфраструктурой</a></li>
+								<li><a href="" class="link">Обучение</a></li>
+								<li><a href="" class="link">О нас</a></li>
+								<p class="text">+7 (915) 044 82 24</p>
+							</ul>
+					
+							<img src="img/logo-black.png" alt="">
+						</div>
+					  </div>
 					<a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
 					<img src="img/phone-mobile.png" alt="">
 				</div>

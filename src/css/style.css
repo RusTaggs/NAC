@@ -219,6 +219,9 @@ body {
   transition: .3s ease-in;
   cursor: pointer; }
 
+.stopper {
+  overflow-y: hidden; }
+
 .button:hover {
   background: #55A7D9; }
 
@@ -483,6 +486,8 @@ footer {
         margin: 0; }
 
 @media (max-width: 48rem) {
+  .cookie {
+    display: none; }
   .mobile {
     display: block; }
   .container {
@@ -501,7 +506,119 @@ footer {
     .header .header-menu__mobile .container {
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      /*
+				* Just a quick hamburger
+				*/
+      /* 
+				* Transform all the slices of hamburger
+				* into a crossmark.
+				*/
+      /*
+				* But let's hide the middle one.
+				*/
+      /*
+				* Ohyeah and the last one should go the other direction
+				*/
+      /*
+				* Make this absolute positioned
+				* at the top left of the screen
+				*/
+      /*
+				* And let's slide it in from the left
+				*/ }
+      .header .header-menu__mobile .container #menuToggle {
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none; }
+      .header .header-menu__mobile .container #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease; }
+      .header .header-menu__mobile .container #menuToggle a:hover {
+        color: tomato; }
+      .header .header-menu__mobile .container #menuToggle input {
+        display: block;
+        width: 4rem;
+        height: 3.2rem;
+        position: absolute;
+        top: -0.7rem;
+        left: -0.5rem;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none; }
+      .header .header-menu__mobile .container #menuToggle span {
+        display: block;
+        width: 3.3rem;
+        height: .4rem;
+        margin-bottom: .5rem;
+        margin-left: 0rem;
+        position: relative;
+        transition: .3s ease-in;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 0.4rem 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+      .header .header-menu__mobile .container #menuToggle span:first-child {
+        transform-origin: 0% 0%; }
+      .header .header-menu__mobile .container #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%; }
+      .header .header-menu__mobile .container #menuToggle input:checked ~ span {
+        transition: .3s ease-in;
+        display: flex;
+        align-self: end;
+        justify-content: end;
+        opacity: 1;
+        transform: rotate(45deg) translate(-0.2rem, -0.1rem);
+        background: #232323; }
+      .header .header-menu__mobile .container #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2); }
+      .header .header-menu__mobile .container #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -0.1rem); }
+      .header .header-menu__mobile .container #menu {
+        position: absolute;
+        width: 80.6rem;
+        height: 110vh;
+        margin: -10rem 0 0 -5rem;
+        padding: 5rem;
+        padding-top: 12.5rem;
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+        .header .header-menu__mobile .container #menu .link {
+          font-size: 3.6rem;
+          padding: 0 2rem;
+          color: #001828; }
+        .header .header-menu__mobile .container #menu .link::after {
+          position: absolute;
+          right: 7rem; }
+        .header .header-menu__mobile .container #menu .text {
+          font-size: 3.6rem;
+          font-weight: 700;
+          margin-top: 3.5rem;
+          margin-left: 2rem; }
+        .header .header-menu__mobile .container #menu img {
+          width: 20rem;
+          position: absolute;
+          bottom: 15%;
+          left: 37%; }
+      .header .header-menu__mobile .container #menu li {
+        padding: 3.5rem 0;
+        font-size: 2.2rem;
+        border-bottom: 1px solid #D8D8D8; }
+      .header .header-menu__mobile .container #menuToggle input:checked ~ div {
+        transform: none; }
       .header .header-menu__mobile .container a .logo {
         width: 13rem; }
       .header .header-menu__mobile .container .toggle-bar {
@@ -1179,6 +1296,8 @@ header .header-404 {
     z-index: 2;
     display: none;
     flex-direction: column; }
+    .offer .offers-main .container .offer-info .close-info {
+      cursor: pointer; }
     .offer .offers-main .container .offer-info .text {
       color: #fff;
       margin: 0; }
