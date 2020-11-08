@@ -8,6 +8,7 @@ $(document).ready(function(){
         
     // });
     
+    //offers block
     $('.show-more').click(function() {
         var id = $(this).attr('data-tab'),
             content = $('.offer-info[data-tab="'+ id +'"]');
@@ -22,18 +23,22 @@ $(document).ready(function(){
             content.slideUp().removeClass('active');
         });
      });
-     
+    
+
+     //close cookie
     $('.close-cookie').click(function(){
         $('.cookie').fadeOut();
     });
 
+
+    //menu mobile fixed
     $('.toggler').click(function(){
         $('body').toggleClass('stopper');
     });
 	
 
     
-
+    //menu desktop
     $('.menu li').hover(function () {
         
 
