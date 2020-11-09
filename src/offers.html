@@ -27,7 +27,7 @@
 				<div class="menu-top">
 					<a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
 						<div class="top-info">
-							<a href="" class="button">Оставить заявку</a>
+							<a href="#footer-form" class="button">Оставить заявку</a>
 							<div class="contacts">
 								<p class="text">+7 915 044 82 24</p>
 								<img src="img/phone-ico.png" alt="">
@@ -116,11 +116,57 @@
 		</div>
 		<div class="header-menu__mobile">
 			<div class="container">
-				<div class="toggle-bar">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+				<div id="menuToggle">
+					<!--
+					A fake / hidden checkbox is used as click reciever,
+					so you can use the :checked selector on it.
+					-->
+					<input type="checkbox" class="toggler"/>
+					
+					<!--
+					Some spans to act as a hamburger.
+					
+					They are acting like a real hamburger,
+					not that McDonalds stuff.
+					-->
+					
+
+					<span ></span>
+					<span ></span>
+					<span ></span>
+					
+					<!--
+					Too bad the menu has to be inside of the button
+					but hey, it's pure CSS magic.
+					-->
+					
+					<div id="menu">
+							
+						<ul >
+							
+							<li><a href="itsm.html" class="link">ITSM-консалтинг</a></li>
+							<li><p href="automize.html" class="link" data-id="auto">Автоматизация ИТ-процессов</p></li>
+							<li><a href="managment.html" class="link" data-id="man">Управление ИТ-инфраструктурой</a></li>
+							<li><a href="learning.html" class="link">Обучение</a></li>
+							<li><p  class="link sub-about" data-id="about">О нас</p>
+								<ul class="sub-about-list" data-id="about">
+									<li><a href="about.html" class="link">О компании</a></li>
+									<li><a href="about.html" class="link">Принципы</a></li>
+									<li><a href="comand.html" class="link">Команда</a></li>
+									<li><a href="partners.html" class="link">Партнеры</a></li>
+									<li><a href="vacancies.html" class="link">Вакансии</a></li>
+									<li><a href="contact.html" class="link">Контакты</a></li>
+									<li><a href="projects.html" class="link">Проекты</a></li>
+									
+								</ul>
+							</li>
+							
+							<p class="text">+7 (915) 044 82 24</p>
+						</ul>
+				
+						<img src="img/logo-black.png" alt="">
+					</div>
+				  </div>
 				<a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
 				<img src="img/phone-mobile.png" alt="">
 			</div>
@@ -151,7 +197,69 @@
 			<div class="offers-main">
 				<div class="main-container">
 					<div class="container">
-						<div class="main-item" >
+						<div class="main-item" data-tab="1" data-tab2="1">
+							<div class="item-text">
+								<p class="title">Подход Enterprise Service Management</p>
+								<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
+							</div>
+							<div class="show-more" data-tab='1'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+							
+						</div>
+						
+						
+						<div class="main-item" data-tab="2" data-tab2="2">
+							<div class="item-text">
+								<p class="title">Подходящий для вас вариант лицензирования</p>
+								<p class="text">Приобретая платформу Ivanti Service Manager, вы можете оптимизировать ваши расходы,  выбрав подходящую для вас модель лицензирования из множества различных вариантов, которые предлагает компания Ivanti.</p>
+							</div>
+							<div class="show-more" data-tab='2'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						
+						<div class="main-item" data-tab="3" data-tab2="3">
+							<div class="item-text">
+								<p class="title">Богатый набор инструментов Out-Of-The-Box</p>
+								<p class="text">Платформа Ivanti Service Manager предоставляет множество инструментов для автоматизации сразу после установки, «из коробки». </p>
+								<p class="text">Используйте их для быстрого старта, не откладывая начало работы с платформой.</p>
+							</div>
+							<div class="show-more" data-tab='3'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						
+						<div class="main-item " data-tab="4" data-tab2="4">
+							<div class="item-text">
+								<p class="title">Гибкость настройки решения под нужды вашего бизнеса</p>
+								<p class="text">Платформа Ivanti Service Manager позволяет конфигурировать любые процессы, автоматизируя как деятельность в рамках стандартных процессов ITSM, так и создавать свои собственные.
+								</p>
+								<p class="text">
+									Вы всегда сможете соответствовать динамично меняющимся требованиям вашего бизнеса.
+								</p>
+							</div>
+							<div class="show-more" data-tab='4'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						
+						<div class="main-item" data-tab="5" data-tab2="5">
+							<div class="item-text">
+								<p class="title">Настройка и развитие платформы своими силами </p>
+								<p class="text">Развивайте и поддерживайте платформу силами ваших специалистов - Ivanti Service Manager имеет понятный интерфейс администратора, удобен в настройке и не требует для настройки глубоких специализированных знаний в программировании.</p>
+							</div>
+							<div class="show-more" data-tab='5'>
+								<p class="title">Подробнее</p>
+								<img src="img/showmore.png" alt="" class="offer-arrow">
+							</div>
+						</div>
+						
+						<div class="main-item mobile"  data-tab2="1">
 							<p class="title">Подход Enterprise Service Management</p>
 							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
 							<div class="show-more" data-tab='1'>
@@ -160,8 +268,45 @@
 							</div>
 							
 						</div>
+						<div class="offer-info mobile" data-tab2="1">
 						
-						<div class="main-item" >
+							<div class="info-container">
+								
+									<div class="left-item active" data-id="1">
+										<p class="text">Автоматизируйте управление любыми услугами</p>
+									</div>
+									<div class="right-item active" data-id="1">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+									<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="2">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Lorem, ipsum.
+										</p>
+									</div>
+									<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="3">
+										<p class="text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+								
+							</div>
+							<div class="close-info text">X</div>
+						</div>
+						
+						<div class="main-item mobile"  data-tab2="2">
 							<p class="title">Подход Enterprise Service Management</p>
 							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
 							<div class="show-more" data-tab='2'>
@@ -169,7 +314,44 @@
 								<img src="img/showmore.png" alt="" class="offer-arrow">
 							</div>
 						</div>
-						<div class="main-item" >
+						<div class="offer-info mobile" data-tab2="2">
+						
+							<div class="info-container">
+								
+									<div class="left-item active" data-id="1">
+										<p class="text">Автоматизируйте управление любыми услугами</p>
+									</div>
+									<div class="right-item active" data-id="1">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+									<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="2">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Lorem, ipsum.
+										</p>
+									</div>
+									<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="3">
+										<p class="text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+								
+							</div>
+							<div class="close-info text">X</div>
+						</div>
+						<div class="main-item mobile" " data-tab2="3">
 							<p class="title">Подход Enterprise Service Management</p>
 							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
 							<div class="show-more" data-tab='3'>
@@ -177,7 +359,44 @@
 								<img src="img/showmore.png" alt="" class="offer-arrow">
 							</div>
 						</div>
-						<div class="main-item" >
+						<div class="offer-info mobile" data-tab2="3" >
+						
+							<div class="info-container">
+								
+									<div class="left-item active" data-id="1">
+										<p class="text">Автоматизируйте управление любыми услугами</p>
+									</div>
+									<div class="right-item active" data-id="1">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+									<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="2">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Lorem, ipsum.
+										</p>
+									</div>
+									<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="3">
+										<p class="text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+								
+							</div>
+							<div class="close-info text">X</div>
+						</div>
+						<div class="main-item mobile" data-tab2="4">
 							<p class="title">Подход Enterprise Service Management</p>
 							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
 							<div class="show-more" data-tab='4'>
@@ -185,7 +404,44 @@
 								<img src="img/showmore.png" alt="" class="offer-arrow">
 							</div>
 						</div>
-						<div class="main-item" >
+						<div class="offer-info mobile" data-tab2="4">
+						
+							<div class="info-container">
+								
+									<div class="left-item active" data-id="1">
+										<p class="text">Автоматизируйте управление любыми услугами</p>
+									</div>
+									<div class="right-item active" data-id="1">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+									<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="2">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Lorem, ipsum.
+										</p>
+									</div>
+									<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="3">
+										<p class="text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+								
+							</div>
+							<div class="close-info text">X</div>
+						</div>
+						<div class="main-item mobile"  data-tab2="5">
 							<p class="title">Подход Enterprise Service Management</p>
 							<p class="text">Централизованное управление корпоративным услугами - Enterprise Service Management – подход, заложенный в решение Ivanti Service Manager, является развитием практики ITSM и позволяет применять принципы управления ИТ-услугами для автоматизации любой деятельности в рамках компании. </p>
 							<div class="show-more" data-tab='5'>
@@ -193,22 +449,59 @@
 								<img src="img/showmore.png" alt="" class="offer-arrow">
 							</div>
 						</div>
+						<div class="offer-info mobile" data-tab2="5">
+						
+							<div class="info-container">
+								
+									<div class="left-item active" data-id="1">
+										<p class="text">Автоматизируйте управление любыми услугами</p>
+									</div>
+									<div class="right-item active" data-id="1">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+									<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="2">
+										<p class="text">
+											Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+										</p>
+										<p class="text">
+											Lorem, ipsum.
+										</p>
+									</div>
+									<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+									<div class="right-item" data-id="3">
+										<p class="text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+										</p>
+										<p class="text">
+											Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+										</p>
+									</div>
+								
+							</div>
+							<div class="close-info text">X</div>
+						</div>
 						
 					</div>
 				</div>
 				<div class="container offer-i">
 					<div class="offer-info" data-tab="1">
-						<div class="close-info text">X</div>
+						
 						<div class="info-container">
 							<div class="info-left">
-								<div class="left-item active">
+								<div class="left-item active" data-id="1">
 									<p class="text">Автоматизируйте управление любыми услугами</p>
 								</div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
 							</div>
 							<div class="info-right">
-								<div class="right-item active">
+								<div class="right-item active" data-id="1">
 									<p class="text">
 										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
 									</p>
@@ -216,23 +509,38 @@
 										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
 									</p>
 								</div>
-								<div class="right-item"></div>
-								<div class="right-item"></div>
+								<div class="right-item" data-id="2">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Lorem, ipsum.
+									</p>
+								</div>
+								<div class="right-item" data-id="3">
+									<p class="text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
 							</div>
 						</div>
+						<div class="close-info text">X</div>
 					</div>
 					<div class="offer-info" data-tab="2">
-						<div class="close-info text">X</div>
+						
 						<div class="info-container">
 							<div class="info-left">
-								<div class="left-item active">
+								<div class="left-item active" data-id="1">
 									<p class="text">Автоматизируйте управление любыми услугами</p>
 								</div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
 							</div>
 							<div class="info-right">
-								<div class="right-item active">
+								<div class="right-item active" data-id="1">
 									<p class="text">
 										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
 									</p>
@@ -240,23 +548,38 @@
 										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
 									</p>
 								</div>
-								<div class="right-item"></div>
-								<div class="right-item"></div>
+								<div class="right-item" data-id="2">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Lorem, ipsum.
+									</p>
+								</div>
+								<div class="right-item" data-id="3">
+									<p class="text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
 							</div>
 						</div>
+						<div class="close-info text">X</div>
 					</div>
 					<div class="offer-info" data-tab="3">
-						<div class="close-info text">X</div>
+						
 						<div class="info-container">
 							<div class="info-left">
-								<div class="left-item active">
+								<div class="left-item active" data-id="1">
 									<p class="text">Автоматизируйте управление любыми услугами</p>
 								</div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
 							</div>
 							<div class="info-right">
-								<div class="right-item active">
+								<div class="right-item active" data-id="1">
 									<p class="text">
 										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
 									</p>
@@ -264,23 +587,38 @@
 										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
 									</p>
 								</div>
-								<div class="right-item"></div>
-								<div class="right-item"></div>
+								<div class="right-item" data-id="2">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Lorem, ipsum.
+									</p>
+								</div>
+								<div class="right-item" data-id="3">
+									<p class="text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
 							</div>
 						</div>
+						<div class="close-info text">X</div>
 					</div>
 					<div class="offer-info" data-tab="4">
-						<div class="close-info text">X</div>
+						
 						<div class="info-container">
 							<div class="info-left">
-								<div class="left-item active">
+								<div class="left-item active" data-id="1">
 									<p class="text">Автоматизируйте управление любыми услугами</p>
 								</div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
 							</div>
 							<div class="info-right">
-								<div class="right-item active">
+								<div class="right-item active" data-id="1">
 									<p class="text">
 										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
 									</p>
@@ -288,23 +626,38 @@
 										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
 									</p>
 								</div>
-								<div class="right-item"></div>
-								<div class="right-item"></div>
+								<div class="right-item" data-id="2">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Lorem, ipsum.
+									</p>
+								</div>
+								<div class="right-item" data-id="3">
+									<p class="text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
 							</div>
 						</div>
+						<div class="close-info text">X</div>
 					</div>
 					<div class="offer-info" data-tab="5">
-						<div class="close-info text">X</div>
+						
 						<div class="info-container">
 							<div class="info-left">
-								<div class="left-item active">
+								<div class="left-item active" data-id="1">
 									<p class="text">Автоматизируйте управление любыми услугами</p>
 								</div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
-								<div class="left-item"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="2"><p class="text">Автоматизируйте управление любыми услугами</p></div>
+								<div class="left-item" data-id="3"><p class="text">Автоматизируйте управление любыми услугами</p></div>
 							</div>
 							<div class="info-right">
-								<div class="right-item active">
+								<div class="right-item active" data-id="1">
 									<p class="text">
 										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
 									</p>
@@ -312,10 +665,25 @@
 										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
 									</p>
 								</div>
-								<div class="right-item"></div>
-								<div class="right-item"></div>
+								<div class="right-item" data-id="2">
+									<p class="text">
+										Концепция Enterprise Service Manager предполагает использование инструментов управления ИТ-услугами для автоматизации деятельности других сервисных бизнес-функций, не связанных с ИТ.
+									</p>
+									<p class="text">
+										Lorem, ipsum.
+									</p>
+								</div>
+								<div class="right-item" data-id="3">
+									<p class="text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vero!
+									</p>
+									<p class="text">
+										Использование общих подходов позволяет стандартизировать операции в рамках деятельности компании, исключить дублирование деятельности, повысить прозрачность и контролируемость бизнес-процессов.
+									</p>
+								</div>
 							</div>
 						</div>
+						<div class="close-info text">X</div>
 					</div>
 				</div>
 			</div>
@@ -353,7 +721,7 @@
 	<footer>
 		
 			
-		<form action="" class="footer-form">
+		<form action="" class="footer-form" id="footer-form">
 			<div class="container">
 				<p class="titleBig">Оставить заявку</p>
 			<div class="form-main">

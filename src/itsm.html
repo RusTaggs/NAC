@@ -27,7 +27,7 @@
 				<div class="menu-top">
 					<a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
 						<div class="top-info">
-							<a href="" class="button">Оставить заявку</a>
+							<a href="#footer-form" class="button">Оставить заявку</a>
 							<div class="contacts">
 								<p class="text">+7 915 044 82 24</p>
 								<img src="img/phone-ico.png" alt="">
@@ -116,11 +116,57 @@
 		</div>
 		<div class="header-menu__mobile">
 			<div class="container">
-				<div class="toggle-bar">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+				<div id="menuToggle">
+					<!--
+					A fake / hidden checkbox is used as click reciever,
+					so you can use the :checked selector on it.
+					-->
+					<input type="checkbox" class="toggler"/>
+					
+					<!--
+					Some spans to act as a hamburger.
+					
+					They are acting like a real hamburger,
+					not that McDonalds stuff.
+					-->
+					
+
+					<span ></span>
+					<span ></span>
+					<span ></span>
+					
+					<!--
+					Too bad the menu has to be inside of the button
+					but hey, it's pure CSS magic.
+					-->
+					
+					<div id="menu">
+							
+						<ul >
+							
+							<li><a href="itsm.html" class="link">ITSM-консалтинг</a></li>
+							<li><p href="automize.html" class="link" data-id="auto">Автоматизация ИТ-процессов</p></li>
+							<li><a href="managment.html" class="link" data-id="man">Управление ИТ-инфраструктурой</a></li>
+							<li><a href="learning.html" class="link">Обучение</a></li>
+							<li><p  class="link sub-about" data-id="about">О нас</p>
+								<ul class="sub-about-list" data-id="about">
+									<li><a href="about.html" class="link">О компании</a></li>
+									<li><a href="about.html" class="link">Принципы</a></li>
+									<li><a href="comand.html" class="link">Команда</a></li>
+									<li><a href="partners.html" class="link">Партнеры</a></li>
+									<li><a href="vacancies.html" class="link">Вакансии</a></li>
+									<li><a href="contact.html" class="link">Контакты</a></li>
+									<li><a href="projects.html" class="link">Проекты</a></li>
+									
+								</ul>
+							</li>
+							
+							<p class="text">+7 (915) 044 82 24</p>
+						</ul>
+				
+						<img src="img/logo-black.png" alt="">
+					</div>
+				  </div>
 				<a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
 				<img src="img/phone-mobile.png" alt="">
 			</div>
@@ -167,7 +213,7 @@
 	<footer>
 		
 			
-		<form action="" class="footer-form">
+		<form action="" class="footer-form" id="footer-form">
 			<div class="container">
 				<p class="titleBig">Оставить заявку</p>
 			<div class="form-main">

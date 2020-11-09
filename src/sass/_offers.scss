@@ -84,7 +84,11 @@
             .text{
                 color: #fff;
             }
-    
+            
+            .main-item.mobile{
+                display: none;
+            }
+
             .main-item{
                 border-right: 4px solid #fff ;
                 border-left: 4px solid #fff;
@@ -92,15 +96,21 @@
                 padding: 10.5rem 3rem 3rem;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 position: relative;
+                transition: .3s ease-in;
                 .text{
                     margin: 7.5rem 0 10rem;
+                    margin-bottom: 3rem;
                     font-size: 1.8rem;
                     font-weight: 700;
                     line-height: 2.65rem;
                     width: 23rem;
+                }
+                .text:last-child{
+                    margin-top: 3rem;
+                    margin-bottom: 7.5rem;
                 }
                 .title{
                     font-size: 2.4rem;
@@ -128,13 +138,31 @@
             }
             .main-item:first-child{
                 border-left: 8px solid #fff;
+                .text{
+                    margin-top: 10.5rem;
+                }
             }
-            .main-item:last-child{
+            
+            .main-item.active{
+                background: #001828;
+            }
+            .main-item:nth-child(2){
+                .text:last-child{
+                    margin-top: 7.5rem;
+                }
+            }
+            .main-item:nth-child(5){
                 border-right: 8px solid #fff;
+                .text:last-child{
+                    margin-top: 7.5rem;
+                }
             }
         }
 
         .container{
+            .offer-info2{
+                display: none;
+            }
             .offer-info{
                 padding: 3rem;
                 background: #001828;
@@ -143,10 +171,13 @@
                 width: 100.5%;
                 z-index: 2;
                 display: none;
-                flex-direction: column;
+                flex-direction: column-reverse;
 
                 .close-info{
                     cursor: pointer;
+                    padding: 1rem;
+                    align-self: flex-end;
+                    font-size: 2.6rem;
                 }
                 .text{
                     color: #fff;
@@ -175,7 +206,7 @@
                     .info-right{
                         width: 80rem;
                         .right-item{
-                            
+                            display: none;
                             .text{
                                 font-size: 2.4rem;
                                 margin-bottom: 3rem;
@@ -185,12 +216,17 @@
                             }
     
                         }
+                        .right-item.active{
+                            display: block;
+
+                        }
                     }
                 }
             }
             .offer-info.active{
-                display: block;
+                display: flex;
             }
+            
         }
 
         
@@ -332,6 +368,7 @@
         }
         .offers-main{
             
+
             .container{
                 padding: 0;
                 display: flex;
@@ -340,10 +377,15 @@
                 flex-wrap: wrap;
                 
                 .main-item{
+                    display: none;
+                }
+
+                .main-item.mobile{
                     width: 100%;
-                    border-left: 4.4rem solid #fff;
-                    border-right: 4.4rem solid #fff;
-                    border-bottom: 4rem solid #fff;
+                    border-left: 4.4rem solid #f8f8f8;
+                    border-right: 4.4rem solid #f8f8f8;
+                    border-top: 4rem solid #f8f8f8;
+                    display: flex;
                     padding: 5.5rem 5rem 3rem;
                     justify-content: start;
                     align-items: start;
@@ -368,7 +410,83 @@
                         }
 
                     }
+                    .offer-info_mobile{
+                        
+    
+
+                        .left-item{
+                            background: #fff;
+                            .text{
+                                color: #001828;
+                            }
+                        }
+                        .left-item.active{
+                            background: #83cefd;
+                        }
+                        .right-item{
+                            display: none;
+                        }
+                        .right-item.active{
+                            display: block;
+                        }
+                    }
+                   
                 }
+                .main-item.mobile:first-child{
+                    border-left: 4.4rem solid #f8f8f8;
+                    
+                }
+                .main-item.mobile:last-child{
+                    border-right: 4.4rem solid #f8f8f8;
+                }
+                .offer-info.mobile{
+                    border-left: 4.35rem solid #f8f8f8;
+                    border-right: 4.35rem solid #f8f8f8;
+                    padding: 0;
+                    display: none;
+                    flex-direction: column-reverse;
+
+                    .close-info{
+                        align-self: center;
+                        
+                            font-size: 4.5rem;
+                        
+                    }
+                    .info-container{
+                        display: flex;
+                        flex-direction: column;
+                        .left-item{
+                            
+                            .text{
+                                font-size: 3.6rem;
+                                background: #fff;
+                                color: #001828;
+                                padding: 4rem 5rem;
+                            }
+                        }
+                        .left-item.active{
+                            .text{
+                                background: #83cefd;
+                                color: #fff;
+                            }
+                        }
+
+                        .right-item{
+                            display: none;
+                            .text{
+                                font-size: 3.6rem;
+                                padding: 4rem;
+                            }
+                        }
+                        .right-item.active{
+                            display: block;
+                        }
+                    }
+                }
+               
+            }
+            .offer-i{
+                display: none;
             }
         }
     }
