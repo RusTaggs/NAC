@@ -187,6 +187,7 @@
                 .info-container{
                     display: flex;
                     .info-left{
+                        position: relative;
                         border: 2px solid #83CEFD;
                         height: 63rem;
                         width: 30rem;
@@ -201,18 +202,49 @@
                             font-weight: 700;
                             background: #83cefd;
                         }
+                        .title{
+                            color: #83CEFD;
+                            position: absolute;
+                            bottom: 2rem;
+                            left: 3rem;
+                            width: 25rem;
+                            margin: 0 auto;
+                        }
                         
                     }
                     .info-right{
-                        width: 80rem;
+                        width: 100rem;
                         .right-item{
                             display: none;
                             .text{
-                                font-size: 2.4rem;
+                                font-size: 2rem;
                                 margin-bottom: 3rem;
                             }
                             .text:last-child{
                                 margin-bottom: 0;
+                            }
+                            .text-container{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                ul:last-child{
+
+                                    margin-left: 18rem;
+                                }
+                            }
+                            ul{
+                                margin: 5rem 0;
+                            }
+                            .item-img{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: start;
+
+                                img{
+                                    width: 40rem;
+                                    margin: 0 4rem;
+                                    margin-bottom: 4rem;
+                                }
                             }
     
                         }
@@ -462,6 +494,14 @@
                                 background: #fff;
                                 color: #001828;
                                 padding: 4rem 5rem;
+                            }
+                        }
+                        .item-img{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            img{
+                                width: 60rem;
                             }
                         }
                         .left-item.active{
