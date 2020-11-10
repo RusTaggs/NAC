@@ -24,6 +24,9 @@
         font-size: 2.4rem;
         color: #083657;
     }
+    .link::after{
+        content: ">>";
+    }
 
     .vacancies-container{
         display: flex;

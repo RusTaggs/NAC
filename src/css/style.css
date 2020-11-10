@@ -215,7 +215,7 @@ body {
 .button {
   padding: 1.78rem 4.8rem;
   font-size: 1.7rem;
-  font-weight: 700;
+  font-family: "Circle Bold";
   background: #83CEFD;
   border-radius: 6rem;
   color: #fff;
@@ -240,12 +240,12 @@ body {
 .text {
   font-size: 1.6rem;
   color: #001828;
-  font-weight: 400; }
+  font-family: "Circle Regular"; }
 
 .link {
   font-size: 1.6rem;
   color: #001828;
-  font-weight: 400; }
+  font-family: "Circle Regular"; }
 
 .link::after {
   content: ">";
@@ -253,12 +253,13 @@ body {
 
 .title {
   font-size: 2.4rem;
-  font-weight: 400;
-  color: #001828; }
+  color: #001828;
+  font-family: "Circle Bold"; }
 
 .titleBig {
   font-size: 4.5rem;
-  color: #001828; }
+  color: #001828;
+  font-family: "Circle Bold"; }
 
 .container {
   max-width: 150rem;
@@ -288,10 +289,11 @@ body {
     justify-content: start; }
   .cookie .text {
     font-size: 1.8rem;
-    font-weight: 700; }
+    font-family: "Circle Bold";
+    margin-bottom: 1rem; }
   .cookie .link {
     text-decoration: underline;
-    font-weight: 400;
+    font-family: "Circle Regular";
     font-size: 1.4rem; }
   .cookie .link::after {
     content: ""; }
@@ -336,6 +338,7 @@ header {
   background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/background.png") no-repeat;
   background-size: cover; }
   header .header-menu {
+    background: linear-gradient(269.96deg, #0B0B16 12.08%, rgba(11, 11, 22, 0) 100.03%);
     height: 15.3rem;
     display: flex;
     flex-direction: column; }
@@ -353,7 +356,7 @@ header {
         header .header-menu .menu-top .top-info .text {
           font-size: 2rem;
           color: #fff;
-          font-weight: 700;
+          font-family: "Circle Bold";
           margin-right: 1.5rem; }
         header .header-menu .menu-top .top-info a {
           scroll-behavior: smooth; }
@@ -389,7 +392,8 @@ header {
             padding: 1.7rem 3.2rem; }
             header .header-menu .menu-bottom .container ul li .sub-menu .title {
               color: #fff;
-              margin-bottom: 2rem; }
+              margin-bottom: 2rem;
+              font-size: 2.2rem; }
             header .header-menu .menu-bottom .container ul li .sub-menu .link {
               color: #fff;
               padding: 1rem 0;
@@ -409,7 +413,7 @@ header {
               width: 8rem; }
       header .header-menu .menu-bottom .container .text {
         font-size: 1.8rem;
-        font-weight: 700; }
+        font-family: "Circle Bold"; }
   header .header-menu__mobile {
     display: none; }
   header .header-main .container .main-text {
@@ -423,6 +427,7 @@ header {
       margin-bottom: 7.4rem;
       line-height: 3.5rem; }
     header .header-main .container .main-text .titleBig {
+      font-family: "Circle Bold";
       line-height: 5.4rem; }
 
 main .offers {
@@ -446,6 +451,8 @@ main .offers-item {
     main .offers-item .item-text .text {
       margin-top: 1rem;
       margin-bottom: 4.2rem; }
+    main .offers-item .item-text .link::after {
+      content: ">>"; }
   main .offers-item p,
   main .offers-item a {
     color: #fff; }
@@ -486,7 +493,9 @@ footer {
         footer .footer-form .container .form-main .main-right textarea {
           margin-top: 1rem;
           width: 50rem;
-          height: 29.2rem; }
+          height: 29.2rem;
+          font-size: 1.7rem;
+          font-family: "Circle Regular"; }
         footer .footer-form .container .form-main p::after {
           content: "*";
           color: #FC8787;
@@ -520,9 +529,11 @@ footer {
       justify-content: space-between; }
       footer .footer-main .container .text {
         color: #fff;
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        font-family: "Circle Bold"; }
       footer .footer-main .container .text:first-child {
-        color: #b0b0b0; }
+        color: #b0b0b0;
+        font-family: "Circle Regular"; }
       footer .footer-main .container .contact-icons a {
         margin: 0 3.1rem; }
       footer .footer-main .container .contact-icons a:first-child {
@@ -582,8 +593,6 @@ footer {
         text-decoration: none;
         color: #232323;
         transition: color 0.3s ease; }
-      .header .header-menu__mobile .container #menuToggle a:hover {
-        color: tomato; }
       .header .header-menu__mobile .container #menuToggle input {
         display: block;
         width: 4rem;
@@ -869,6 +878,11 @@ footer {
       display: inline-block;
       font-weight: 700;
       margin-bottom: 4.8rem; }
+    .automize .automize-groups .group1 .automize-left .link::after,
+    .automize .automize-groups .group1 .automize-right .link::after,
+    .automize .automize-groups .group2 .automize-left .link::after,
+    .automize .automize-groups .group2 .automize-right .link::after {
+      content: ">>"; }
     .automize .automize-groups .group1 .automize-left,
     .automize .automize-groups .group2 .automize-left {
       width: 77.5rem; }
@@ -960,16 +974,21 @@ main {
       margin-bottom: 8rem; }
   .policy .titleBig {
     font-size: 6.4rem;
-    font-weight: 700;
+    font-family: "Circle Bold";
     margin-bottom: 3rem; }
   .policy .title {
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-family: "Circle Bold";
+    margin-bottom: 2.3rem;
     font-size: 3.6rem; }
   .policy .text {
     line-height: 3rem;
     font-size: 2.4rem;
     margin-bottom: 3.5rem; }
+
+footer {
+  padding-top: 0; }
+  footer .footer-main {
+    margin-top: 0; }
 
 @media (max-width: 48rem) {
   .policy .policy-text {
@@ -980,9 +999,6 @@ main {
   display: flex;
   justify-content: space-between;
   position: relative; }
-  .contact .container2 {
-    margin: 0 auto;
-    margin-left: 5%; }
   .contact .contact-container {
     width: 53rem;
     padding-top: 11.3rem;
@@ -1012,8 +1028,12 @@ main {
   .contact img {
     object-fit: cover;
     object-position: 0% 45%;
-    height: 47.9rem;
+    height: 49.6rem;
     width: 57.5%; }
+
+footer .footer-form .container {
+  margin-top: 0;
+  padding-top: 5rem; }
 
 @media (max-width: 48rem) {
   .contact {
@@ -1052,6 +1072,8 @@ main {
   .vacancies .link {
     font-size: 2.4rem;
     color: #083657; }
+  .vacancies .link::after {
+    content: ">>"; }
   .vacancies .vacancies-container {
     display: flex;
     justify-content: space-between;
@@ -1152,7 +1174,7 @@ header .header-404 {
       .comand .comand-item .item-text .text {
         font-size: 1.6rem;
         line-height: 2.35rem;
-        margin: 2rem 0; }
+        margin: 1rem 0 3rem; }
       .comand .comand-item .item-text .text:last-child {
         margin: 0; }
   .comand .comand-item:nth-child(3n+3) {
@@ -1185,7 +1207,9 @@ header .header-404 {
     margin-bottom: 7rem; }
   .projects .projects-container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
   .projects .projects-item {
     background: #f3f3f3;
     width: 71.5rem;
@@ -1195,7 +1219,8 @@ header .header-404 {
     border-radius: 1rem; }
     .projects .projects-item img {
       margin-bottom: 7.5rem;
-      margin-left: 6rem; }
+      margin-left: 0rem;
+      width: 54rem; }
     .projects .projects-item .item-text {
       width: 51.4rem; }
       .projects .projects-item .item-text .text {
@@ -1203,7 +1228,7 @@ header .header-404 {
         font-size: 2rem;
         line-height: 3rem; }
       .projects .projects-item .item-text .text:first-child {
-        margin-bottom: 3.5rem;
+        margin-bottom: 9rem;
         font-size: 2.4rem; }
       .projects .projects-item .item-text .text:last-child {
         margin-bottom: 0; }
@@ -1215,15 +1240,15 @@ header .header-404 {
     margin-right: 0; }
   .projects .projects-item:nth-child(2) img {
     margin-bottom: 9.5rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
     margin-top: 1.5rem; }
   .projects .projects-item:nth-child(3) img {
     margin-bottom: 10rem;
-    margin-left: 6rem;
+    margin-left: 0rem;
     margin-top: 5rem; }
   .projects .projects-item:nth-child(4) img {
     margin-bottom: 11rem;
-    margin-left: 5.7rem;
+    margin-left: 0rem;
     margin-top: 6rem; }
 
 @media (max-width: 48rem) {
@@ -1289,7 +1314,8 @@ header .header-404 {
         border-radius: 6rem;
         color: #083657;
         font-size: 1.8rem;
-        padding: 2rem 19rem 2rem 2rem; }
+        padding: 2rem 19rem 2rem 2rem;
+        font-family: "Circle Light"; }
       .offer .container .offers-header .contact-us form input[type=submit] {
         position: absolute;
         border: 0;
@@ -1328,7 +1354,7 @@ header .header-404 {
         margin: 7.5rem 0 10rem;
         margin-bottom: 3rem;
         font-size: 1.8rem;
-        font-weight: 700;
+        font-family: "Circle Bold";
         line-height: 2.65rem;
         width: 23rem; }
       .offer .offers-main .main-container .main-item .text:last-child {
@@ -1336,7 +1362,8 @@ header .header-404 {
         margin-bottom: 7.5rem; }
       .offer .offers-main .main-container .main-item .title {
         font-size: 2.4rem;
-        font-weight: 700; }
+        font-family: "Circle Bold";
+        line-height: 4rem; }
       .offer .offers-main .main-container .main-item .show-more {
         display: flex;
         flex-direction: column;
@@ -1401,6 +1428,7 @@ header .header-404 {
           bottom: 2rem;
           left: 3rem;
           width: 25rem;
+          font-family: "Circle Extra Bold";
           margin: 0 auto; }
       .offer .offers-main .container .offer-info .info-container .info-right {
         width: 100rem; }
@@ -1461,25 +1489,27 @@ header .header-404 {
           margin: 0; }
         .offer .offers-spec .container .spec-items .item-container img {
           width: 5rem;
-          margin-bottom: 3rem; }
+          margin-bottom: 4.5rem; }
       .offer .offers-spec .container .spec-items .item-container:last-child {
         margin-right: 0; }
         .offer .offers-spec .container .spec-items .item-container:last-child img {
           width: 8.3rem; }
+      .offer .offers-spec .container .spec-items .item-container:first-child img {
+        margin-bottom: 3rem; }
 
 @media (max-width: 48rem) {
   .offer .container .titleBig {
-    width: 70rem; }
+    width: 65rem; }
   .offer .container .titleBig:last-child {
     margin-bottom: 4rem; }
   .offer .container .offers-header .titleBig {
     width: 65rem;
     margin-bottom: 10rem; }
   .offer .container .offers-header .contact-us .button {
-    padding: 4.5rem 14.5rem;
+    padding: 4.5rem 9.5rem;
     background: #083657;
     font-size: 2.8rem;
-    margin-right: 4rem; }
+    margin-right: 6rem; }
   .offer .container .offers-header .contact-us form .button.mobile {
     border: 0;
     border-radius: 15rem;
@@ -1533,7 +1563,7 @@ header .header-404 {
         font-weight: 400;
         width: 41rem; }
       .offer .offers-main .container .main-item.mobile .text {
-        width: 62rem;
+        width: 59rem;
         margin: 4.5rem 0 5rem;
         font-size: 2.4rem;
         font-weight: 400;

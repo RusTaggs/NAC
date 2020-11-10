@@ -29,6 +29,9 @@
                     font-weight: 700;
                     margin-bottom: 4.8rem;
                 }
+                .link::after{
+                    content: ">>";
+                }
             }
             .automize-left{
                 width: 77.5rem;

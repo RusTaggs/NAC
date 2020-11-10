@@ -10,6 +10,8 @@
     .projects-container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+            align-items: center;
     }
     .projects-item{
         background: #f3f3f3;
@@ -21,7 +23,8 @@
         
         img{
             margin-bottom: 7.5rem;
-            margin-left: 6rem;
+            margin-left: 0rem;
+            width: 54rem;
         }
 
         .item-text{
@@ -33,7 +36,7 @@
                 line-height: 3rem;
             }
             .text:first-child{
-                margin-bottom: 3.5rem;
+                margin-bottom: 9rem;
                 font-size: 2.4rem;
             }
 
@@ -53,21 +56,21 @@
     .projects-item:nth-child(2){
         img{
             margin-bottom: 9.5rem;
-            margin-left: 5rem;
+            margin-left: 0rem;
             margin-top: 1.5rem;
         }
     }
     .projects-item:nth-child(3){
         img{
             margin-bottom: 10rem;
-            margin-left: 6rem;
+            margin-left: 0rem;
             margin-top: 5rem;
         }
     }
     .projects-item:nth-child(4){
         img{
             margin-bottom: 11rem;
-            margin-left: 5.7rem;
+            margin-left: 0rem;
             margin-top: 6rem;
 
         }
