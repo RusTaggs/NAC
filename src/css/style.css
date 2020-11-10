@@ -958,14 +958,18 @@ main {
     width: auto;
     font-weight: 700; }
   .about .about-items {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .about .about-items .item {
       width: 60.4rem;
       display: flex;
       align-items: start;
       margin-bottom: 7rem; }
       .about .about-items .item img {
-        margin-right: 5rem; } }
+        margin-right: 5rem;
+        width: 2.8rem;
+        margin-bottom: 0;
+        margin-top: 2rem; } }
 
 .policy {
   padding: 11rem 0 8rem; }
@@ -1043,17 +1047,29 @@ footer .footer-form .container {
     .contact .container2 {
       width: 95%;
       padding: 0 4.4rem;
-      margin: 0; }
+      margin: 0 auto; }
       .contact .container2 .contact-container {
-        width: 100%; }
+        width: 100%;
+        padding-top: 13.3rem;
+        padding-bottom: 10rem; }
         .contact .container2 .contact-container .titleBig {
           margin-bottom: 5.5rem; }
         .contact .container2 .contact-container .contact-item .title {
           font-size: 3.2rem; }
+        .contact .container2 .contact-container .item-text img {
+          display: block;
+          width: 2.5rem; }
         .contact .container2 .contact-container .item-text .text {
           font-size: 2.4rem; }
     .contact img {
-      width: 100%; } }
+      width: 45.5%;
+      display: none; }
+    .contact img.mobile {
+      display: block;
+      width: 100.5%;
+      height: 78rem;
+      object-fit: cover;
+      object-position: top; } }
 
 .vacancies {
   padding-top: 7rem;
@@ -1537,17 +1553,21 @@ header .header-404 {
     flex-wrap: wrap; }
     .offer .offers-spec .container .spec-items .item-container {
       margin-right: 0;
-      margin-bottom: 5rem; }
+      margin-bottom: 12rem; }
       .offer .offers-spec .container .spec-items .item-container .title {
-        font-size: 4.2rem;
-        width: 32.5rem; }
+        font-size: 5.4rem;
+        width: 39.5rem;
+        line-height: 6.5rem; }
       .offer .offers-spec .container .spec-items .item-container .text {
         margin: 5rem 0 6rem;
-        font-size: 3.6rem;
-        width: 64.7rem; }
+        font-size: 3.1rem;
+        width: 61.5rem; }
       .offer .offers-spec .container .spec-items .item-container img {
         width: 7rem;
         margin-bottom: 5rem; }
+  .offer .offers-main .main-container {
+    background: linear-gradient(90deg, #001423 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/offer-bg-mobile.png") no-repeat;
+    background-size: cover; }
   .offer .offers-main .container {
     padding: 0;
     display: flex;
@@ -1598,6 +1618,8 @@ header .header-404 {
       border-left: 4.35rem solid #f8f8f8;
       border-right: 4.35rem solid #f8f8f8;
       padding: 0;
+      margin-left: 0;
+      width: 100%;
       display: none;
       flex-direction: column-reverse; }
       .offer .offers-main .container .offer-info.mobile .close-info {
@@ -1610,6 +1632,8 @@ header .header-404 {
           font-size: 3.6rem;
           background: #fff;
           color: #001828;
+          margin: 0px -1px;
+          width: 100.4%;
           padding: 4rem 5rem; }
         .offer .offers-main .container .offer-info.mobile .info-container .item-img {
           display: flex;

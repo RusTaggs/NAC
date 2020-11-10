@@ -46,10 +46,11 @@
 
     }
    
-
     img{
         width: 45.5%;
+        
     }
+    
 
 }
 
@@ -70,10 +71,11 @@ footer{
         .container2{
             width: 95%;
             padding: 0 4.4rem;
-            margin: 0;
+            margin: 0 auto;
             .contact-container{
                 width: 100%;
-
+                padding-top: 13.3rem;
+                padding-bottom: 10rem;
                 .titleBig{
                     margin-bottom: 5.5rem;
                 }
@@ -84,7 +86,10 @@ footer{
                     }
                 }
                 .item-text{
-                    
+                    img{
+                        display: block;
+                        width: 2.5rem;
+                    }
                     .text{
                         font-size: 2.4rem;
                     }
@@ -92,7 +97,15 @@ footer{
             }
         }
         img{
-            width: 100%;
+            width: 45.5%;
+            display: none;
+        }
+        img.mobile{
+            display: block;
+            width: 100.5%;
+            height: 78rem;
+            object-fit: cover;
+            object-position: top;
         }
     }
 }
