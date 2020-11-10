@@ -4,11 +4,14 @@
     justify-content: space-between;
     position: relative;
     
-    
+    .container2{
+        margin-left: 11%;
+        margin-right: 8%;
+    }
     .contact-container{
         width: 53rem;
        
-        padding-top: 11.3rem;
+        padding-top: 16.3rem;
         padding-bottom: 16rem;
     }
     .titleBig{
@@ -45,10 +48,7 @@
    
 
     img{
-        object-fit: cover;
-        object-position: 0% 45%;
-        height: 49.6rem;
-        width: 57.5%;
+        width: 45.5%;
     }
 
 }

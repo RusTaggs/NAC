@@ -1,5 +1,5 @@
 .partners{
-    padding: 8rem 0 7rem;
+    padding: 8rem 0 19rem;
 
     .partners-container{
         display: flex;
@@ -8,6 +8,7 @@
     .group1,
     .group2{
         display: flex;
+        align-items: flex-end;
         .partners-item:first-child{
             margin-right: 14rem;
         }
