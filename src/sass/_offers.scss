@@ -434,29 +434,36 @@
                 }
 
                 .main-item.mobile{
-                    width: 100%;
-                    border-left: 4.4rem solid #f8f8f8;
-                    border-right: 4.4rem solid #f8f8f8;
+                    
+                    width: 101%;
+                    margin-top: -1.2rem;
+                    margin-bottom: -0.2rem;
+                    margin-right: -0.2rem;
+                    border-left: 4rem solid #f8f8f8;
+                    border-right: 4rem solid #f8f8f8;
                     border-top: 4rem solid #f8f8f8;
                     display: flex;
-                    padding: 5.5rem 5rem 3rem;
+                    padding: 5.5rem 0rem 0rem;
                     justify-content: start;
                     align-items: start;
+                    border-spacing: 0;
 
                     .title{
                         font-size: 4.5rem;
                         font-weight: 400;
                         width: 41rem;
+                        margin: 0 5rem;
                     }
                     .text{
                         width: 59rem;
-                        margin: 4.5rem 0 5rem;
+                        margin: 4.5rem 5rem 5rem;
                         font-size: 2.4rem;
                         font-weight: 400;
                         line-height: 4.65rem;
                     }
                     .show-more{
                         margin: 0 auto;
+                        padding-bottom: 5rem;
                         .title{
                             width: auto;
                             font-size: 2.8rem;
@@ -483,6 +490,65 @@
                             display: block;
                         }
                     }
+
+                    .offer-info.mobile{
+                        margin-top: -0.5rem;
+                        margin-bottom: -0.2rem; 
+                        margin-right: -0.2rem;
+                        padding: 0;
+                        margin-left: 0;
+                        width: 100%;
+                        display: none;
+                        flex-direction: column-reverse;
+    
+                        .close-info{
+                            align-self: center;
+                            
+                                font-size: 4.5rem;
+                            
+                        }
+                        .info-container{
+                            display: flex;
+                            flex-direction: column;
+                            .left-item{
+                                margin-bottom: -0.2rem;
+                                .text{
+                                    font-size: 3.6rem;
+                                    background: #fff;
+                                    color: #001828;
+                                    margin: 0px auto;
+                                    width: 100.135%;
+                                    
+                                    padding: 4rem 5rem;
+                                }
+                            }
+                            .item-img{
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                img{
+                                    width: 60rem;
+                                }
+                            }
+                            .left-item.active{
+                                .text{
+                                    background: #83cefd;
+                                    color: #fff;
+                                }
+                            }
+    
+                            .right-item{
+                                display: none;
+                                .text{
+                                    font-size: 3.6rem;
+                                    padding: 4rem;
+                                }
+                            }
+                            .right-item.active{
+                                display: block;
+                            }
+                        }
+                    }
                    
                 }
                 .main-item.mobile:first-child{
@@ -492,63 +558,7 @@
                 .main-item.mobile:last-child{
                     border-right: 4.4rem solid #f8f8f8;
                 }
-                .offer-info.mobile{
-                    border-left: 4.35rem solid #f8f8f8;
-                    border-right: 4.35rem solid #f8f8f8;
-                    padding: 0;
-                    margin-left: 0;
-                    width: 100%;
-                    display: none;
-                    flex-direction: column-reverse;
-
-                    .close-info{
-                        align-self: center;
-                        
-                            font-size: 4.5rem;
-                        
-                    }
-                    .info-container{
-                        display: flex;
-                        flex-direction: column;
-                        .left-item{
-                            
-                            .text{
-                                font-size: 3.6rem;
-                                background: #fff;
-                                color: #001828;
-                                margin: 0px -1px;
-                                width: 100.4%;
-                                
-                                padding: 4rem 5rem;
-                            }
-                        }
-                        .item-img{
-                            display: flex;
-                            justify-content: center;
-                            flex-wrap: wrap;
-                            img{
-                                width: 60rem;
-                            }
-                        }
-                        .left-item.active{
-                            .text{
-                                background: #83cefd;
-                                color: #fff;
-                            }
-                        }
-
-                        .right-item{
-                            display: none;
-                            .text{
-                                font-size: 3.6rem;
-                                padding: 4rem;
-                            }
-                        }
-                        .right-item.active{
-                            display: block;
-                        }
-                    }
-                }
+               
                
             }
             .offer-i{
