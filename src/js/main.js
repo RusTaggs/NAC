@@ -67,8 +67,7 @@ $(document).ready(function () {
     });
     $(".offer-info.mobile").hide();
 
-    
-   
+      
     
     $('.sub-about').click(function(){
         $('.sub-about-list').slideToggle();

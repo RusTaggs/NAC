@@ -84,8 +84,9 @@ body {
 	width: 105.7rem;
 	position: fixed;
 	z-index: 3;
-	top: 80vh;
-	left: 20%;
+	left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
 
 	img {
 		margin-right: 5rem;
@@ -236,7 +237,7 @@ header {
 						position: relative;
 
 						a {
-							padding: 1.5rem 3.5rem 1.67rem;
+							padding: 1.6rem 3.5rem 1.6rem;
 							transition: .3s ease-in;
 						}
 
@@ -307,7 +308,13 @@ header {
 		display: none;
 	}
 
+	
+}
+
+main {
 	.header-main {
+		background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
+		background-size: cover;
 		.container {
 			.main-text {
 				padding: 10.3rem 0 20.1rem;
@@ -331,10 +338,6 @@ header {
 			}
 		}
 	}
-}
-
-main {
-
 	.offers {
 		padding: 8.5rem 0;
 		display: flex;
@@ -374,23 +377,29 @@ main {
 		}
 
 	}
-}
-
-footer {
-	background: linear-gradient(108.32deg, #001726 40.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
-	background-size: cover;
-	padding-top: 10rem;
-
-
-
-
-	.titleBig {
-		line-height: 6.6rem;
-		color: $txtWhite;
-	}
-
 	.footer-form {
+		background: linear-gradient(108.32deg, #001726 40.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
+		background-size: cover;
 		scroll-behavior: smooth;
+
+		
+		.titleBig {
+			line-height: 6.6rem;
+			color: $txtWhite;
+		}
+
+		
+
+		.button {
+			padding: 2.2rem 7rem;
+			border: 0;
+			margin-bottom: 10rem;
+		}
+
+		.text {
+			font-size: 1.8rem;
+			color: $txtWhite;
+		}
 		.container {
 			padding-top: 12rem !important;
 
@@ -468,6 +477,22 @@ footer {
 			}
 		}
 	}
+}
+
+footer {
+	background: linear-gradient(108.32deg, #001726 44.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
+	background-size: cover;
+	padding-top: 10rem;
+	background-position: 50% 80%;
+
+
+
+	.titleBig {
+		line-height: 6.6rem;
+		color: $txtWhite;
+	}
+
+	
 
 	.button {
 		padding: 2.2rem 7rem;
@@ -770,6 +795,10 @@ footer {
 			}
 		}
 
+		
+	}
+
+	main {
 		.header-main {
 			.container {
 				.main-text {
@@ -801,9 +830,6 @@ footer {
 				}
 			}
 		}
-	}
-
-	main {
 		.container {
 
 			.offers {
@@ -842,10 +868,6 @@ footer {
 			}
 
 		}
-	}
-
-	footer {
-
 		.footer-form {
 			.container {
 				margin-bottom: 10.2rem;
@@ -930,8 +952,15 @@ footer {
 				width: 100%;
 				padding: 3.5rem 7rem;
 				font-size: 2.7rem;
+				margin-bottom: 0;
 			}
+			padding-bottom: 10rem;
 		}
+	}
+
+	footer {
+
+		
 
 
 		.footer-main {
