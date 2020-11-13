@@ -261,9 +261,29 @@
                                 justify-content: start;
 
                                 img{
-                                    width: 40rem;
-                                    margin: 0 4rem;
+                                    width: 60rem;
+                                    margin: 0 auto;
                                     margin-bottom: 4rem;
+                                }
+                                
+                                .swiper-container{
+                                    margin: 5% auto;
+
+                                    .swiper-wrapper{
+                                           
+
+                                        .swiper-slide{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            img{
+                                                margin: 0;
+                                                width: 60rem;
+                                            }
+                                        }
+                                    }
+                                    
                                 }
                             }
     

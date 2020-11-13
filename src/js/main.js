@@ -1,9 +1,32 @@
 $(document).ready(function () {
-    
-    
+    //SWIPER
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+       // direction: 'vertical',
+       speed: 400,
+       
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
 
 
+       //offers block
 
+       //ARROW UP/DOWN
     $('.show-more').click(function(){
         $(this).closest(".offers-main").find(".offer-arrow").removeClass('rotate'); // close all other
 
@@ -11,7 +34,7 @@ $(document).ready(function () {
 
     });
 
-    //offers block
+   //INFO TABS
     $('.show-more').click(function () {
         var id = $(this).attr('data-tab'),
             content = $('.offer-info[data-tab="' + id + '"]');
@@ -66,13 +89,7 @@ $(document).ready(function () {
         
     });
     $(".offer-info.mobile").hide();
-
-      
-    
-    $('.sub-about').click(function(){
-        $('.sub-about-list').slideToggle();
-    });
-
+    //INFO TABS MOBILE
     $('.left-item').click(function () {
         var id = $(this).attr('data-id'),
             content = $('.right-item[data-id="' + id + '"]');
@@ -87,6 +104,13 @@ $(document).ready(function () {
 
         
     });
+      
+    //MAIN MENU
+    $('.sub-about').click(function(){
+        $('.sub-about-list').slideToggle();
+    });
+
+   
 
     //close cookie
     $('.close-cookie').click(function () {

@@ -177,7 +177,8 @@ body {
 
 header {
 	background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url('../img/background.png') no-repeat;
-	background-size: cover;
+	background-position: 10% 0%;
+    background-size: 133%;
 
 
 	.header-menu {
@@ -480,11 +481,13 @@ main {
 }
 
 footer {
-	background: linear-gradient(108.32deg, #001726 44.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
-	background-size: cover;
+	background: linear-gradient(56deg, rgba(0, 23, 38, 0.9) 134%, rgba(0, 0, 0, 0.56) 138%, rgba(0, 0, 0, 0.6) 100%), url(../img/background.png) no-repeat;
+	
 	padding-top: 10rem;
-	background-position: 50% 80%;
-
+	
+	background-size: 122%;
+    
+    background-position: 55.4% 100%;
 
 
 	.titleBig {

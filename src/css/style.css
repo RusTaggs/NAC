@@ -337,7 +337,8 @@ body {
 
 header {
   background: linear-gradient(108.32deg, #001726 7.13%, rgba(18, 6, 15, 0) 82.72%), url("../img/background.png") no-repeat;
-  background-size: cover; }
+  background-position: 10% 0%;
+  background-size: 133%; }
   header .header-menu {
     background: linear-gradient(269.96deg, #0B0B16 12.08%, rgba(11, 11, 22, 0) 100.03%);
     height: 15.3rem;
@@ -525,10 +526,10 @@ main .footer-form {
         line-height: 1.95rem; }
 
 footer {
-  background: linear-gradient(108.32deg, #001726 44.08%, rgba(0, 23, 38, 0) 86.43%), url(../img/background.png) no-repeat;
-  background-size: cover;
+  background: linear-gradient(56deg, rgba(0, 23, 38, 0.9) 134%, rgba(0, 0, 0, 0.56) 138%, rgba(0, 0, 0, 0.6) 100%), url(../img/background.png) no-repeat;
   padding-top: 10rem;
-  background-position: 50% 80%; }
+  background-size: 122%;
+  background-position: 55.4% 100%; }
   footer .titleBig {
     line-height: 6.6rem;
     color: #fff; }
@@ -1252,10 +1253,17 @@ header .header-404 {
     margin-right: 6rem;
     margin-bottom: 7rem;
     border-radius: 1rem; }
-    .projects .projects-item img {
+    .projects .projects-item .img-container {
       margin-bottom: 7.5rem;
-      margin-left: 0rem;
-      width: 54rem; }
+      margin-top: 5rem;
+      width: 54rem;
+      height: 26rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .projects .projects-item .img-container img {
+        margin-left: 0rem;
+        width: 54rem; }
     .projects .projects-item .item-text {
       width: 51.4rem; }
       .projects .projects-item .item-text .text {
@@ -1273,18 +1281,6 @@ header .header-404 {
         margin-bottom: 2rem; }
   .projects .projects-item:nth-child(2n+2) {
     margin-right: 0; }
-  .projects .projects-item:nth-child(2) img {
-    margin-bottom: 11.5rem;
-    margin-left: 0rem;
-    margin-top: 1.5rem; }
-  .projects .projects-item:nth-child(3) img {
-    margin-bottom: 10rem;
-    margin-left: 0rem;
-    margin-top: 5rem; }
-  .projects .projects-item:nth-child(4) img {
-    margin-bottom: 11rem;
-    margin-left: 0rem;
-    margin-top: 7.5rem; }
 
 @media (max-width: 48rem) {
   .projects .projects-container {
@@ -1502,9 +1498,18 @@ header .header-404 {
             flex-wrap: wrap;
             justify-content: start; }
             .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img img {
-              width: 40rem;
-              margin: 0 4rem;
+              width: 60rem;
+              margin: 0 auto;
               margin-bottom: 4rem; }
+            .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img .swiper-container {
+              margin: 5% auto; }
+              .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img .swiper-container .swiper-wrapper .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center; }
+                .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img .swiper-container .swiper-wrapper .swiper-slide img {
+                  margin: 0;
+                  width: 60rem; }
         .offer .offers-main .container .offer-info .info-container .info-right .right-item.active {
           display: block; }
   .offer .offers-main .container .offer-info.active {

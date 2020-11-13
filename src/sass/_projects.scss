@@ -21,10 +21,19 @@
         margin-bottom: 7rem;
         border-radius: 1rem;
         
-        img{
+        .img-container{
             margin-bottom: 7.5rem;
-            margin-left: 0rem;
+            margin-top: 5rem;
             width: 54rem;
+            height: 26rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                
+                margin-left: 0rem;
+                width: 54rem;
+            }
         }
 
         .item-text{
@@ -53,27 +62,7 @@
     .projects-item:nth-child(2n+2){
         margin-right: 0;
     }
-    .projects-item:nth-child(2){
-        img{
-            margin-bottom: 11.5rem;
-            margin-left: 0rem;
-            margin-top: 1.5rem;
-        }
-    }
-    .projects-item:nth-child(3){
-        img{
-            margin-bottom: 10rem;
-            margin-left: 0rem;
-            margin-top: 5rem;
-        }
-    }
-    .projects-item:nth-child(4){
-        img{
-            margin-bottom: 11rem;
-            margin-left: 0rem;
-            margin-top: 7.5rem;
-        }
-    }
+    
 }
 
 @media(max-width: 48rem){
