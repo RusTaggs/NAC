@@ -48,6 +48,32 @@ $(document).ready(function() {
         });
         return false;
 
+    });
+
+    $('.call-form').submit(function(){
+        var that = $(this);
+        var data = that.serialize();
+		
+		var sendBtn = $(this).find('.button');
+        $.ajax({
+            type: 'post',
+            url: '/ajax/form-rev.php',
+            data: data,
+            dataType: 'json',
+            success: function (e) {
+                console.log(true);
+								alertMessage(sendBtn, data, 'success');
+                reset ();
+
+            },
+            error:function(e){
+              console.log(false);
+							alertMessage(sendBtn, data, 'error');
+            }
+        });
+        return false;
+
     })
+
 
 });

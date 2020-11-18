@@ -182,9 +182,9 @@
 					</p>
 					<div class="contact-us">
 						<a href="" class="button">Оставить заявку</a>
-						<form action="">
+						<form action="" method="POST" class="call-form">
 							<input type="text" name="" id="" value="+7 (9ХХ) ХХХ ХХ-ХХ">
-							<input type="submit" name="" id="" value="Заказать звонок">
+							<input type="submit" name="" id="" value="Заказать звонок" class="button">
 							<button class="button mobile"><img src="img/phone-ico.png" alt=""></button>
 						</form>
 					</div>
@@ -224,7 +224,6 @@
 							<div class="item-text">
 								<p class="title">Богатый набор инструментов Out-Of-The-Box</p>
 								<p class="text">Платформа Ivanti Service Manager предоставляет множество инструментов для автоматизации сразу после установки, «из коробки». </p>
-								<p class="text">Используйте их для быстрого старта, не откладывая начало работы с платформой.</p>
 							</div>
 							<div class="show-more" data-tab='3'>
 								<p class="title">Подробнее</p>
@@ -237,9 +236,7 @@
 								<p class="title">Гибкость настройки решения под нужды вашего бизнеса</p>
 								<p class="text">Платформа Ivanti Service Manager позволяет конфигурировать любые процессы, автоматизируя как деятельность в рамках стандартных процессов ITSM, так и создавать свои собственные.
 								</p>
-								<p class="text">
-									Вы всегда сможете соответствовать динамично меняющимся требованиям вашего бизнеса.
-								</p>
+							
 							</div>
 							<div class="show-more" data-tab='4'>
 								<p class="title">Подробнее</p>
@@ -761,7 +758,7 @@
 						</div>
 						<div class="close-info"><img src="img/close.png" alt=""></div>
 					</div>
-					<div class="offer-info" data-tab="3">
+					<div class="offer-info"  data-tab="3">
 						
 						<div class="info-container">
 							<div class="info-left">
@@ -780,9 +777,7 @@
 										Ivanti Service Manager имеет отдельный пользовательский портал, позволяющий пользователям запрашивать стандартные услуги, регистрировать инциденты, просматривать свои ранее зарегистрированные заявки, пользоваться базой знаний через удобный и интуитивно понятный интерфейс портала самообслуживания.									
 									</p>
 									<div class="item-img">
-										
-										
-										<div class="swiper-container">
+										<div class="swiper-container slider1">
 											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
 												<!-- Slides -->
@@ -793,12 +788,14 @@
 											<!-- If we need pagination -->
 										
 											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev prv-1"></div>
+											<div class="swiper-button-next nxt-1"></div>
 										
 											
 											
 										</div>
+										
+										
 									</div>
 									
 								</div>
@@ -806,7 +803,7 @@
 									<p class="text">
 										Ivanti Service Manager имеет богатую функциональность по визуальному отображению информации в виде графиков и дашбордов, позволяющую оперативно контролировать происходящее в рамках автоматизируемых процессов и получать данные в различных разрезах.									</p>
 									<div class="item-img">
-										<div class="swiper-container">
+										<div class="swiper-container slider2">
 											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
 												<!-- Slides -->
@@ -818,9 +815,8 @@
 											
 											
 										
-											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev prv-2"></div>
+											<div class="swiper-button-next nxt-2"></div>
 										
 											
 											
@@ -836,7 +832,7 @@
 									<div class="item-img">
 										
 										
-										<div class="swiper-container">
+										<div class="swiper-container slider3">
 											<!-- Additional required wrapper -->
 											<div class="swiper-wrapper">
 												<!-- Slides -->
@@ -847,8 +843,8 @@
 											<!-- If we need pagination -->
 										
 											<!-- If we need navigation buttons -->
-											<div class="swiper-button-prev"></div>
-											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev prv-3"></div>
+											<div class="swiper-button-next nxt-3"></div>
 										
 											
 											
@@ -1053,6 +1049,6 @@
 </footer>
 	
 	<script src="js/main.js"></script>
-	
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -29,11 +29,11 @@ body {
 }
 
 .button.success {
-	background: #71F486;
+	background: #71F486 !important;
 }
 
 .button.error {
-	background: #FF7171;
+	background: #FF7171 !important;
 }
 
 .mobile {
@@ -238,7 +238,7 @@ header {
 						position: relative;
 
 						a {
-							padding: 1.6rem 3.5rem 1.6rem;
+							padding: 1.6rem 3.5rem 1.7rem;
 							transition: .3s ease-in;
 						}
 
@@ -492,7 +492,7 @@ footer {
 
 	.titleBig {
 		line-height: 6.6rem;
-		color: $txtWhite;
+		color: $txtWhite !important;
 	}
 
 	

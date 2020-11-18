@@ -229,10 +229,10 @@ body {
   background: #55A7D9; }
 
 .button.success {
-  background: #71F486; }
+  background: #71F486 !important; }
 
 .button.error {
-  background: #FF7171; }
+  background: #FF7171 !important; }
 
 .mobile {
   display: none; }
@@ -379,7 +379,7 @@ header {
         header .header-menu .menu-bottom .container ul li {
           position: relative; }
           header .header-menu .menu-bottom .container ul li a {
-            padding: 1.6rem 3.5rem 1.6rem;
+            padding: 1.6rem 3.5rem 1.7rem;
             transition: .3s ease-in; }
           header .header-menu .menu-bottom .container ul li a.active {
             color: #fff;
@@ -469,7 +469,7 @@ main .footer-form {
   scroll-behavior: smooth; }
   main .footer-form .titleBig {
     line-height: 6.6rem;
-    color: #fff; }
+    color: #fff !important; }
   main .footer-form .button {
     padding: 2.2rem 7rem;
     border: 0;
@@ -532,7 +532,7 @@ footer {
   background-position: 55.4% 100%; }
   footer .titleBig {
     line-height: 6.6rem;
-    color: #fff; }
+    color: #fff !important; }
   footer .button {
     padding: 2.2rem 7rem;
     border: 0;
@@ -1061,11 +1061,12 @@ footer {
   .contact .contact-items {
     display: flex;
     justify-content: space-between; }
-  .contact img {
+  .contact .map {
     width: 100%;
     height: 48rem;
     object-position: center;
-    object-fit: cover; }
+    object-fit: cover;
+    background-size: cover; }
 
 footer .footer-form .container {
   margin-top: 0;
@@ -1092,15 +1093,14 @@ footer .footer-form .container {
           width: 2.5rem; }
         .contact .container2 .contact-container .item-text .text {
           font-size: 2.4rem; }
-    .contact img {
+    .contact .map {
       width: 45.5%;
       display: none; }
-    .contact img.mobile {
+    .contact .map.mobile {
       display: block;
-      width: 100.5%;
+      width: 100%;
       height: 78rem;
-      object-fit: cover;
-      object-position: top; } }
+      background-size: cover; } }
 
 .vacancies {
   padding-top: 7rem;
@@ -1201,7 +1201,10 @@ header .header-404 {
     .comand .comand-item img {
       margin-right: 3rem;
       width: 16.5rem;
-      height: 16.5rem; }
+      height: 16.5rem;
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: center; }
     .comand .comand-item .item-text {
       width: 26.4rem; }
       .comand .comand-item .item-text .title {
@@ -1347,18 +1350,19 @@ header .header-404 {
         font-size: 1.8rem;
         padding: 2.5rem 24rem 2rem 2rem;
         font-family: "Circle Light"; }
-      .offer .container .offers-header .contact-us form input[type=submit] {
+      .offer .container .offers-header .contact-us form .button {
         position: absolute;
         border: 0;
         background: #083657;
         border-radius: 6rem;
+        margin-right: 0;
         text-align: center;
         color: #fff;
         font-size: 1.8rem;
         padding: 2.4rem 6.3rem 2.4rem 6.3rem;
         right: 0;
         transition: .3s ease-in; }
-      .offer .container .offers-header .contact-us form input[type=submit]:hover {
+      .offer .container .offers-header .contact-us form .button:hover {
         background: #195784; }
   .offer .offers-main .main-container {
     background: url("../img/offers-bg.png") no-repeat;
@@ -1386,19 +1390,27 @@ header .header-404 {
       position: relative;
       transition: .3s ease-in; }
       .offer .offers-main .main-container .main-item .text {
-        margin: 7.5rem 0 10rem;
+        margin: 0rem 0 0rem;
         margin-bottom: 3rem;
         font-size: 1.8rem;
         font-family: "Circle Bold";
         line-height: 2.65rem;
         width: 23rem; }
       .offer .offers-main .main-container .main-item .text:last-child {
-        margin-top: 3rem;
+        margin-top: 0rem;
         margin-bottom: 7.5rem; }
       .offer .offers-main .main-container .main-item .title {
         font-size: 2.4rem;
         font-family: "Circle Bold";
         line-height: 4rem; }
+      .offer .offers-main .main-container .main-item .item-text {
+        height: 100%;
+        margin-bottom: 5rem; }
+        .offer .offers-main .main-container .main-item .item-text .title {
+          height: 11rem;
+          margin-bottom: 7.5rem; }
+        .offer .offers-main .main-container .main-item .item-text .text {
+          margin-bottom: 2.5rem; }
       .offer .offers-main .main-container .main-item .show-more {
         display: flex;
         flex-direction: column;
@@ -1416,19 +1428,17 @@ header .header-404 {
       border-left: 0;
       margin-left: -.1rem; }
       .offer .offers-main .main-container .main-item:first-child .text {
-        margin-top: 10.5rem; }
+        margin-top: 0; }
     .offer .offers-main .main-container .main-item.active {
       background: #001828;
       border-bottom: .7rem solid #001828; }
-    .offer .offers-main .main-container .main-item:nth-child(2) .text:last-child {
-      margin-top: 7.5rem; }
     .offer .offers-main .main-container .main-item:nth-child(5) {
       border-right: 0;
       margin-left: -0.3rem;
       border-left: .6rem solid #fff;
       padding-right: 2rem; }
       .offer .offers-main .main-container .main-item:nth-child(5) .text:last-child {
-        margin-top: 7.5rem; }
+        margin-top: 0rem; }
   .offer .offers-main .container .offer-info2 {
     display: none; }
   .offer .offers-main .container .offer-info {
@@ -1496,13 +1506,17 @@ header .header-404 {
           .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img {
             display: flex;
             flex-wrap: wrap;
-            justify-content: start; }
+            justify-content: start;
+            position: relative; }
             .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img img {
               width: 60rem;
               margin: 0 auto;
               margin-bottom: 4rem; }
             .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img .swiper-container {
-              margin: 5% auto; }
+              margin: 5% auto;
+              width: 100%;
+              height: 100%;
+              overflow: hidden; }
               .offer .offers-main .container .offer-info .info-container .info-right .right-item .item-img .swiper-container .swiper-wrapper .swiper-slide {
                 display: flex;
                 justify-content: center;
@@ -1536,12 +1550,10 @@ header .header-404 {
           color: #000;
           width: 18.5rem; }
         .offer .offers-spec .container .spec-items .item-container .text {
-          margin: 5rem 0 6rem;
+          margin-top: 5rem;
           font-size: 1.8rem;
           color: #000000;
           width: 38.7rem; }
-        .offer .offers-spec .container .spec-items .item-container .text:last-child {
-          margin: 0; }
         .offer .offers-spec .container .spec-items .item-container img {
           width: 5rem;
           margin-bottom: 4.5rem; }

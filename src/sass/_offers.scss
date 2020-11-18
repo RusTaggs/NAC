@@ -49,11 +49,12 @@
                         padding: 2.5rem 24rem 2rem 2rem;
                         font-family: $cirLig;
                     }
-                    input[type=submit]{
+                    .button{
                         position: absolute;
                         border: 0;
                         background: #083657;
                         border-radius: 6rem;
+                        margin-right: 0;
                         text-align: center;
                         color: #fff;
                         font-size: 1.8rem;
@@ -61,7 +62,7 @@
                         right: 0;
                         transition: .3s ease-in;
                     }
-                    input[type=submit]:hover{
+                    .button:hover{
                         background: #195784;
                     }
                 }
@@ -107,7 +108,7 @@
                 position: relative;
                 transition: .3s ease-in;
                 .text{
-                    margin: 7.5rem 0 10rem;
+                    margin: 0rem 0 0rem;
                     margin-bottom: 3rem;
                     font-size: 1.8rem;
                     font-family: $cirBold;
@@ -115,13 +116,24 @@
                     width: 23rem;
                 }
                 .text:last-child{
-                    margin-top: 3rem;
+                    margin-top: 0rem;
                     margin-bottom: 7.5rem;
                 }
                 .title{
                     font-size: 2.4rem;
                     font-family: $cirBold;
                     line-height: 4rem;
+                }
+                .item-text{
+                    height: 100%;
+                    margin-bottom: 5rem;
+                    .title{
+                        height: 11rem;
+                        margin-bottom: 7.5rem;
+                    }
+                    .text{
+                        margin-bottom: 2.5rem;
+                    }
                 }
     
                 .show-more{
@@ -147,7 +159,7 @@
                 border-left: 0;
                 margin-left: -.1rem;
                 .text{
-                    margin-top: 10.5rem;
+                    margin-top: 0;
                 }
             }
             
@@ -155,18 +167,14 @@
                 background: #001828;
                 border-bottom: .7rem solid #001828;
             }
-            .main-item:nth-child(2){
-                .text:last-child{
-                    margin-top: 7.5rem;
-                }
-            }
+           
             .main-item:nth-child(5){
                 border-right: 0;
                 margin-left: -0.3rem;
                 border-left: .6rem solid #fff;
                 padding-right: 2rem;
                 .text:last-child{
-                    margin-top: 7.5rem;
+                    margin-top: 0rem;
                 }
             }
             
@@ -259,6 +267,7 @@
                                 display: flex;
                                 flex-wrap: wrap;
                                 justify-content: start;
+                                position: relative;
 
                                 img{
                                     width: 60rem;
@@ -268,7 +277,12 @@
                                 
                                 .swiper-container{
                                     margin: 5% auto;
+                                    width: 100%;
+                                    height: 100%;
+                                    
+                                    overflow: hidden;
 
+                                    
                                     .swiper-wrapper{
                                            
 
@@ -331,14 +345,12 @@
                         width: 18.5rem;
                     }
                     .text{
-                        margin: 5rem 0 6rem;
+                        margin-top: 5rem;
                         font-size: 1.8rem;
                         color: #000000;
                         width: 38.7rem;
                     }
-                    .text:last-child{
-                        margin: 0;
-                    }
+                    
                     img{
                         
                         width: 5rem;
