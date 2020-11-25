@@ -1,45 +1,35 @@
 
 
-$(document).ready(function () {
-    //SWIPER
-    const slider1 = document.querySelector('.slider1');
-    const slider2 = document.querySelector('.slider2');
-    const slider3 = document.querySelector('.slider3');
 
-    let mySwiper1 = new Swiper(slider1, {
-        // Optional parameters
-       // direction: 'vertical',
-        // Navigation arrows
+$(document).ready(function () {
+    const swiper1 = document.querySelector('.slider1');
+    const swiper2 = document.querySelector('.slider2');
+    const swiper3 = document.querySelector('.slider3');
+    
+    let slider1 = new Swiper(swiper1, {
+                    
         navigation: {
           nextEl: '.nxt-1',
           prevEl: '.prv-1',
         },
         
     });
-    let mySwiper2 = new Swiper(slider2, {
-        // Optional parameters
-       // direction: 'vertical',
-        // Navigation arrows
+    let slider2 = new Swiper(swiper2, {
+                    
         navigation: {
           nextEl: '.nxt-2',
           prevEl: '.prv-2',
         },
         
     });
-    let mySwiper3 = new Swiper(slider3, {
-        // Optional parameters
-       // direction: 'vertical',
-        // Navigation arrows
+    let slider3 = new Swiper(swiper3, {
+                    
         navigation: {
           nextEl: '.nxt-3',
           prevEl: '.prv-3',
         },
         
     });
-    
-
-       //offers block
-
        //ARROW UP/DOWN
     $('.show-more').click(function(){
         $(this).closest(".offers-main").find(".offer-arrow").removeClass('rotate'); // close all other
@@ -54,21 +44,23 @@ $(document).ready(function () {
         var id = $(this).attr('data-tab'),
             content = $('.offer-info[data-tab="' + id + '"]');
             
-                $('.main-item.active').removeClass('active');
-                $(this).parent('.main-item').addClass('active');
-                $('.offer-info.active').removeClass('active').slideUp();
-                content.slideDown().addClass('active').css('display','flex');
+        $('.main-item.active').removeClass('active');
+        $(this).parent('.main-item').addClass('active');
+        $('.offer-info.active').removeClass('active').slideUp();
+        content.slideDown().addClass('active').css('display','flex');
                
 
-        $('.close-info').click(function () {
-            content.slideUp().removeClass('active');
-            $('.main-item.active').removeClass('active');
-            $('.show-more').closest(".offers-main").find(".offer-arrow").removeClass('rotate'); // close all other
-        });
-        //swiper init update
-        mySwiper1.update();
-        mySwiper2.update();
-        mySwiper3.update();
+        
+        //swiper init 
+            
+            
+            
+            
+        //swiper init 
+        slider1.update();
+        slider2.update();
+        slider3.update();
+        
     });
 
     $('.show-more.mobile').click(function () {
@@ -98,20 +90,29 @@ $(document).ready(function () {
     $(".offer-info.mobile").hide();
     //INFO TABS MOBILE
     $('.left-item').click(function () {
+        
+        //swiper init 
+        
         var id = $(this).attr('data-id'),
             content = $('.right-item[data-id="' + id + '"]');
 
-        $('.left-item.active').removeClass('active');
+
+        
+        
+        $('.offer-info.active').find('.left-item.active').removeClass('active');
+        
         $(this).addClass('active');
         
 
 
         $('.right-item.active').removeClass('active').fadeOut('fast');
         content.fadeIn().addClass('active');
-        //swiper init update
-        mySwiper1.update();
-        mySwiper2.update();
-        mySwiper3.update();
+        
+            
+        
+        slider1.update();
+        slider2.update();
+        slider3.update();
     });
       
     //MAIN MENU

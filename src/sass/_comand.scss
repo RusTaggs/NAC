@@ -25,6 +25,8 @@
         }
         .item-text{
             width: 26.4rem;
+            
+            
             .title{
                 font-size: 2.4rem;
                 font-weight: 700;
@@ -34,9 +36,12 @@
                 font-size: 1.6rem;
                 line-height: 2.35rem;
                 margin: 1rem 0 3rem;
+                height: 5rem;
             }
             .text:last-child{
                 margin: 0;
+                margin-bottom: 1.5rem;
+                height: auto;
             }
 
         }
@@ -57,13 +62,14 @@
         }
         .comand-item{
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
             img{
                 margin-right: 0;
                 margin-bottom: 2rem;
             }
+            
         }
         .comand-item:nth-child(3n+3){
             margin-right: 5rem;
