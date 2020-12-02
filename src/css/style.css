@@ -651,7 +651,7 @@ footer {
       footer .footer-main .container .contact-icons a:last-child {
         margin: 0; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .mobile {
     display: block; }
   .cookie {
@@ -1039,7 +1039,7 @@ footer {
     .itsm .itsm-item2 .text {
       color: #fff; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .itsm .group1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -1096,7 +1096,7 @@ footer {
       .automize .automize-groups .group2 .automize-right {
         width: 40.5rem; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .automize .automize-container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
@@ -1160,7 +1160,7 @@ main {
       .about .about-items .item .about-text .text:last-child {
         margin-bottom: 0; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .about .title {
     width: auto;
     font-weight: 700; }
@@ -1214,7 +1214,7 @@ footer {
   footer .footer-main {
     margin-top: 0; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .policy .policy-text {
     width: auto; } }
 
@@ -1277,7 +1277,7 @@ footer .footer-form .container {
   margin-top: 0;
   padding-top: 5rem; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1377,7 +1377,7 @@ footer .footer-form .container {
     font-size: 2.4rem;
     line-height: 3rem; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .partners .group1,
   .partners .group2 {
     -ms-flex-wrap: wrap;
@@ -1455,7 +1455,7 @@ header .header-404 {
   .comand .comand-item:last-child {
     margin-right: 0; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .comand .comand-container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1541,7 +1541,7 @@ header .header-404 {
   .projects .projects-item:nth-child(2n+2) {
     margin-right: 0; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .projects .projects-container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1890,7 +1890,7 @@ header .header-404 {
       .offer .offers-spec .container .spec-items .item-container:first-child img {
         margin-bottom: 3rem; }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .offer .container .titleBig {
     width: 65rem; }
   .offer .container .titleBig:last-child {
