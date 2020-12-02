@@ -255,7 +255,7 @@ header {
 							color: #fff;
 							background: #001828;
 							padding: 1.7rem 3.2rem;
-
+							
 							.title {
 								color: #fff;
 								margin-bottom: 2rem;
@@ -271,7 +271,13 @@ header {
 							.link::after {
 								content: "";
 							}
-
+							.com{
+								transition: .3s ease-in;
+							}
+							.com:hover{
+								transition: .3s ease-in;
+								text-decoration: underline;
+							}
 							.sub-menu__left {
 								width: 24rem;
 								margin-right: 3rem;
@@ -489,10 +495,10 @@ footer {
     
     background-position: 55.4% 100%;
 
-
+ 
 	.titleBig {
 		line-height: 6.6rem;
-		color: $txtWhite !important;
+		color: #fff !important;
 	}
 
 	

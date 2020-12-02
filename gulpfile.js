@@ -22,6 +22,7 @@ let paths = {
 
 }
 
+
 // LOGIC
 
 const { src, dest, parallel, series, watch } = require('gulp');
@@ -32,6 +33,7 @@ const browserSync  = require('browser-sync').create();
 const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const imagemin     = require('gulp-imagemin');
+const autoprefixer = require('gulp-autoprefixer');
 
 function browsersync() {
 	browserSync.init({
@@ -45,6 +47,10 @@ function styles() {
 	return src(paths.styles.src)
 	.pipe(eval(preprocessor)())
 	.pipe(concat(paths.cssOutputName))
+	.pipe(autoprefixer({
+		browsers: ['last 2 versions'],
+		cascade: false
+	}))
 	.pipe(dest(paths.styles.dest))
 	.pipe(browserSync.stream())
 }
@@ -73,3 +79,6 @@ exports.styles      = styles;
 exports.images      = images;
 exports.images      = cleanimg;
 exports.default     = parallel(images, styles, browsersync, startwatch);
+
+
+ 

@@ -6,7 +6,8 @@ function alertMessage(btn, data, className) {
     if (className == 'error') {
         data = 'Ошибка';
         
-    } else {
+    } 
+    else if(className == 'success'){
         data = 'Отправлено';
         
     }
